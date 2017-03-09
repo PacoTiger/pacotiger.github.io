@@ -35,7 +35,7 @@ function init() {
 	renderer = new THREE.WebGLRenderer();
 
 	// Scene initialization
-	camera.position.z = 50;
+	camera.position.z = 500;
 
 	renderer.setClearColor("#121212", 1.0);
 	renderer.setSize(window.innerWidth, window.innerHeight);
