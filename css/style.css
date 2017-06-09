@@ -124,6 +124,7 @@ h1 {
 }
 
 .sky-container {
+  border: black solid;
   position: absolute;
   color: white;
   text-transform: uppercase;
