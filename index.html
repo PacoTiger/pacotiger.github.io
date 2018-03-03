@@ -3,13 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <title>PacoTiger's Portfolio</title>
-    <script src="https://use.typekit.net/jrj6out.js"></script>
-<script>try{Typekit.load({ async: false });}catch(e){}</script>
+    
     
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="http://img01.deviantart.net/be0e/i/2014/128/e/4/jk_logo_by_mrlegend007-d5fukvr.png" />
-
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
 
     <script src="js/prefixfree.min.js"></script>
@@ -21,7 +19,7 @@
 
     <!-- This pen isn't a fan of small view heights, check it out in  fullpage view for optimal viewing	 -->
   <div class="x-mark">
-		<div class="container">
+		<div class="container-mark">
 			<div class="left"></div>
 			<div class="right"></div>
 		</div>
@@ -40,7 +38,7 @@
 			</div>
   </div>
 
-  <div class="sky-container">
+  <div class="sky-container hidde">
 	
 	<section class="container">
 		<div id="carousel">
@@ -52,11 +50,23 @@
 			<figure><a href="www.6.es">6</a></figure>
 			<figure><a href="www.7.es">7</a></figure>
 			<figure><a href="www.8.es">8</a></figure>
-			<figure><a href="www.9.es">9</a></figure>
+			<figure>
+				<header>
+					<div>
+						Project name <span style="text-align: right;">github</span>
+					</div>
+				</header>
+				<article>
+					Descripción del proyecto
+				</article>
+				<footer style="bottom: 1%; position: absolute;">
+					icons JS, CSS
+				</footer>
+			</figure>
 		</div>
 	</section>
 
-	<section ip="options">
+	<section id="options">
 		<p id="navigation">
 			<button id="previous" data-increment="1">Previous</button>
 			<button id="next" data-increment="-1">Next</button>
@@ -76,15 +86,17 @@
       var carousel = document.getElementById('carousel'),
           navButtons = document.querySelectorAll('#navigation button'),
           panelCount = carousel.children.length,
-          
-          theta = 0,
-          onNavButtonClick = function( event ){
-            var increment = parseInt( event.target.getAttribute('data-increment') );
-            theta += ( 360 / panelCount ) * increment;
-            carousel.style.transform = 'translateZ( -288px ) rotateY(' + theta + 'deg)';
-		console.log("theta: ",theta)
+          theta = 0;
+
+      var onNavButtonClick = function (event){
+            var increment = parseInt(event.target.getAttribute('data-increment'));
+            theta += ( 360 / panelCount ) * increment; 
+            carousel.style.transform = 'translateZ(-288px) rotateY(' + theta + 'deg)';
+			console.log("theta: ", theta)
+			console.log(panelCount)
           };
 
+      //Triggers
       for (var i=0; i < 2; i++) {
         navButtons[i].addEventListener( 'click', onNavButtonClick, false);
       }

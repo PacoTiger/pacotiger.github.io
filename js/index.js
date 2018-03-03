@@ -11,11 +11,11 @@ var normalizedMouse = {
 	y: -180
 };
 
-// let lightBlue = {
-// 	r: 34,
-// 	g: 183,
-// 	b: 236
-// };
+let lightBlue = {
+	r: 34,
+	g: 183,
+	b: 236
+};
 
 var darkBlue = {
 	r: 0,
@@ -35,7 +35,7 @@ function init() {
 	renderer = new THREE.WebGLRenderer();
 
 	// Scene initialization
-	camera.position.z = 50;
+	camera.position.z = 90;
 
 	renderer.setClearColor("#121212", 1.0);
 	renderer.setSize(window.innerWidth, window.innerHeight);
@@ -202,18 +202,37 @@ var introContainer = $('.intro-container');
 var skyContainer = $('.sky-container');
 var xMark = $('.x-mark');
 
+
+
+
 $('.shift-camera-button').click(function () {
 	var introTimeline = new TimelineMax();
+	skyContainer.removeClass("hidde");
+	introTimeline.add([
+		TweenLite.fromTo(introContainer, 0.5, { opacity: 1 }, { opacity: 0, ease: Power3.easeIn }), 
+		TweenLite.to(camera.rotation, 3, { x: Math.PI / 2, ease: Power3.easeInOut }),
+		TweenLite.to(camera.position, 2.5, { z: 20, ease: Power3.easeInOut }),
+		TweenLite.to(camera.position, 3, { y: 120, ease: Power3.easeInOut }),
+		TweenLite.to(plane.scale, 3, { x: 2, ease: Power3.easeInOut })
+		]);
 
-	introTimeline.add([TweenLite.fromTo(introContainer, 0.5, { opacity: 1 }, { opacity: 0, ease: Power3.easeIn }), TweenLite.to(camera.rotation, 3, { x: Math.PI / 2, ease: Power3.easeInOut }), TweenLite.to(camera.position, 2.5, { z: 20, ease: Power3.easeInOut }), TweenLite.to(camera.position, 3, { y: 120, ease: Power3.easeInOut }), TweenLite.to(plane.scale, 3, { x: 2, ease: Power3.easeInOut })]);
-
-	introTimeline.add([TweenLite.to(xMark, 2, { opacity: 1, ease: Power3.easeInOut }), TweenLite.to(skyContainer, 2, { opacity: 1, ease: Power3.easeInOut })]);
+	introTimeline.add([
+		TweenLite.to(xMark, 2, { opacity: 1, ease: Power3.easeInOut }), 
+		TweenLite.to(skyContainer, 2, { opacity: 1, ease: Power3.easeInOut })
+		]);
 });
 
 $('.x-mark').click(function () {
 	var outroTimeline = new TimelineMax();
-
-	outroTimeline.add([TweenLite.to(xMark, 0.5, { opacity: 0, ease: Power3.easeInOut }), TweenLite.to(skyContainer, 0.5, { opacity: 0, ease: Power3.easeInOut }), TweenLite.to(camera.rotation, 3, { x: 0, ease: Power3.easeInOut }), TweenLite.to(camera.position, 3, { z: 50, ease: Power3.easeInOut }), TweenLite.to(camera.position, 2.5, { y: 0, ease: Power3.easeInOut }), TweenLite.to(plane.scale, 3, { x: 1, ease: Power3.easeInOut })]);
+	skyContainer.addClass("hidde");
+	outroTimeline.add([
+		TweenLite.to(xMark, 0.5, { opacity: 0, ease: Power3.easeInOut }),
+		TweenLite.to(skyContainer, 0.5, { opacity: 0, ease: Power3.easeInOut }),
+		TweenLite.to(camera.rotation, 3, { x: 0, ease: Power3.easeInOut }),
+		TweenLite.to(camera.position, 3, { z: 50, ease: Power3.easeInOut }),
+		TweenLite.to(camera.position, 2.5, { y: 0, ease: Power3.easeInOut }),
+		TweenLite.to(plane.scale, 3, { x: 1, ease: Power3.easeInOut })
+		]);
 
 	outroTimeline.add([TweenLite.to(introContainer, 0.5, { opacity: 1, ease: Power3.easeIn })]);
 });
