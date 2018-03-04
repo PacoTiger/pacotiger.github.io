@@ -43,8 +43,8 @@
 
 	<section class="container">
 		<div id="navigation">
-			<button id="arrow-left"><i data-increment="1" class="fas fa-angle-double-left fa-7x"></i></button>
-			<button id="arrow-right"><i data-increment="-1" class="fas fa-angle-double-right fa-7x"></i></button>
+			<button id="arrow-left" data-increment="1"><i class="fas fa-angle-double-left fa-7x"></i></button>
+			<button id="arrow-right" data-increment="-1"><i class="fas fa-angle-double-right fa-7x"></i></button>
 		</div>
 		<div id="carousel">
 			<figure><a href="www.1.es">1</a></figure>
@@ -92,7 +92,7 @@
 
 
       var onNavButtonClick = function (event){
-            var increment = parseInt(event.target.getAttribute('data-increment'));
+            var increment = parseInt(event.currentTarget.getAttribute('data-increment'));
             theta += ( 360 / panelCount ) * increment; 
             carousel.style.transform = 'translateZ(-' + r + 'px) rotateY(' + theta + 'deg)';
             console.log("r: ", r)
