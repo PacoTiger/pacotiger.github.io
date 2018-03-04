@@ -86,12 +86,15 @@
       var carousel = document.getElementById('carousel'),
           navButtons = document.querySelectorAll('#navigation button'),
           panelCount = carousel.children.length,
-          theta = 0;
+          theta = 0,
+          panelWitdh = 210,
+          r = (panelWitdh/2)/Math.tan(((360/2)/panelCount)*Math.PI/180);
+
 
       var onNavButtonClick = function (event){
             var increment = parseInt(event.target.getAttribute('data-increment'));
             theta += ( 360 / panelCount ) * increment; 
-            carousel.style.transform = 'translateZ(-288px) rotateY(' + theta + 'deg)';
+            carousel.style.transform = 'translateZ(-' + r + 'px) rotateY(' + theta + 'deg)';
 			console.log("theta: ", theta)
 			console.log(panelCount)
           };
