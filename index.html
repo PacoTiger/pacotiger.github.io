@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="http://img01.deviantart.net/be0e/i/2014/128/e/4/jk_logo_by_mrlegend007-d5fukvr.png" />
-    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
     <script src="js/prefixfree.min.js"></script>
 
@@ -40,7 +40,12 @@
 
   <div class="sky-container hidde">
 	
+
 	<section class="container">
+		<div id="navigation">
+			<button id="arrow-left"><i data-increment="1" class="fas fa-angle-double-left fa-7x"></i></button>
+			<button id="arrow-right"><i data-increment="-1" class="fas fa-angle-double-right fa-7x"></i></button>
+		</div>
 		<div id="carousel">
 			<figure><a href="www.1.es">1</a></figure>
 			<figure><a href="http://nombrededominio.com/contactame.html">2</a></figure>
@@ -66,12 +71,7 @@
 		</div>
 	</section>
 
-	<section id="options">
-		<p id="navigation">
-			<button id="previous" data-increment="1">Previous</button>
-			<button id="next" data-increment="-1">Next</button>
-		</p>
-	</section>
+
   </div>
 
 <!-- Social -->
@@ -81,7 +81,7 @@
 
 <script src="js/index.js"></script>
 <script>
-	
+
     var init = function() {
       var carousel = document.getElementById('carousel'),
           navButtons = document.querySelectorAll('#navigation button'),
@@ -95,8 +95,9 @@
             var increment = parseInt(event.target.getAttribute('data-increment'));
             theta += ( 360 / panelCount ) * increment; 
             carousel.style.transform = 'translateZ(-' + r + 'px) rotateY(' + theta + 'deg)';
+            console.log("r: ", r)
 			console.log("theta: ", theta)
-			console.log(panelCount)
+			console.log("panelCount: ", panelCount)
           };
 
       //Triggers

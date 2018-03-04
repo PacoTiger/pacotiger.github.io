@@ -40,6 +40,18 @@ h1 {
   margin-bottom: 17px;
 }
 
+#arrow-right {
+  position: absolute;
+  top: 45%;
+  right:-125%;
+}
+
+#arrow-left {
+  position: absolute;
+  top: 45%;
+  left: -125%;
+}
+
 .button {
   position: relative;
   cursor: pointer;
