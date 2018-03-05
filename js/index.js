@@ -10,6 +10,13 @@ var normalizedMouse = {
 	x: 0,
 	y: -180
 };
+
+let cranberryDream = {
+	r: 95,
+	g: 25,
+	b: 37
+}
+
 let darkRed = {
 	r:74,
 	g:0,
@@ -28,7 +35,7 @@ var darkBlue = {
 	b: 74
 };
 
-var baseColorRGB = darkRed;
+var baseColorRGB = cranberryDream;
 var baseColor = "rgb(" + baseColorRGB.r + "," + baseColorRGB.g + "," + baseColorRGB.b + ")";
 var nearStars = undefined,
     farStars = undefined,
