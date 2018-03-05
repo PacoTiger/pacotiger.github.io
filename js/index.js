@@ -10,6 +10,11 @@ var normalizedMouse = {
 	x: 0,
 	y: -180
 };
+let darkRed = {
+	r:74,
+	g:0,
+	b:52
+}
 
 let lightBlue = {
 	r: 34,
@@ -23,7 +28,7 @@ var darkBlue = {
 	b: 74
 };
 
-var baseColorRGB = darkBlue;
+var baseColorRGB = darkRed;
 var baseColor = "rgb(" + baseColorRGB.r + "," + baseColorRGB.g + "," + baseColorRGB.b + ")";
 var nearStars = undefined,
     farStars = undefined,
@@ -167,7 +172,7 @@ function render() {
 			});
 			plane.geometry.colorsNeedUpdate = true;
 
-			intersects[0].face.color.setStyle("#006ea0");
+			intersects[0].face.color.setStyle("#445101");
 			plane.geometry.colorsNeedUpdate = true;
 		})();
 	}
@@ -234,7 +239,9 @@ $('.x-mark').click(function () {
 		TweenLite.to(plane.scale, 3, { x: 1, ease: Power3.easeInOut })
 		]);
 
-	outroTimeline.add([TweenLite.to(introContainer, 0.5, { opacity: 1, ease: Power3.easeIn })]);
+	outroTimeline.add([
+		TweenLite.to(introContainer, 0.5, { opacity: 1, ease: Power3.easeIn })
+		]);
 });
 
 render();

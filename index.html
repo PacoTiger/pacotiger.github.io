@@ -17,7 +17,6 @@
 
   <body>
 
-    <!-- This pen isn't a fan of small view heights, check it out in  fullpage view for optimal viewing	 -->
   <div class="x-mark">
 		<div class="container-mark">
 			<div class="left"></div>
@@ -34,35 +33,38 @@
 					<div class="left-plane"></div>
 					<div class="right-plane"></div>
 				</div>	
-				<div class="text">OPEN OCEAN SAILING</div>
+				<div class="text">Welcome to my Planet</div>
 			</div>
   </div>
 
   <div class="sky-container hidde">
-	
-
 	<section class="container">
+
 		<div id="navigation">
-			<button id="arrow-left" data-increment="1"><i class="fas fa-angle-double-left fa-7x"></i></button>
-			<button id="arrow-right" data-increment="-1"><i class="fas fa-angle-double-right fa-7x"></i></button>
+			<span id="arrow-left" data-increment="1"><i class="fas fa-angle-double-left fa-7x"></i></span>
+			<span id="arrow-right" data-increment="-1"><i class="fas fa-angle-double-right fa-7x"></i></span>
 		</div>
+
 		<div id="carousel">
 			<figure><a href="#modal">7</a></figure>
 			<figure><a href="www.8.es">8</a></figure>
-			<figure>
+			<figure class="card">
 				<header>
 					<div>
-						Project name <span style="text-align: right;">github</span>
+						<p class="uppercase"> Project name: <span class="gitIcon"><i class="fab fa-github-square fa-4x"></i></span>
+						</p>	
+						<h2>Random Quote Machine</h2>
 					</div>
 				</header>
 				<article>
-					Descripción del proyecto
+					Grab thousands of quotes through a remote public API to share on Twitter. This is ideal for gaining inspirational insights to share with your followers and more. For this design, I´ve used Bulma CSS Framework.
 				</article>
 				<footer style="bottom: 1%; position: absolute;">
 					icons JS, CSS
 				</footer>
 			</figure>
 		</div>
+
 	</section>
 
 	<!-- Windows Modal -->
@@ -88,7 +90,7 @@
 
     var init = function() {
       var carousel = document.getElementById('carousel'),
-          navButtons = document.querySelectorAll('#navigation button'),
+          navButtons = document.querySelectorAll('#navigation span'),
           panelCount = carousel.children.length,
           theta = 0,
           panelWitdh = 210,
