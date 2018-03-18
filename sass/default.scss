@@ -1,0 +1,39 @@
+body {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+}
+
+h1 {
+  font-family: 'Patua One', sans-serif;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 860px) {
+  h1 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+}
+
+h2 {
+
+}
+
+a:link{
+    text-decoration: none;
+}
+
+.hidde {
+  display: none;
+}
+
+.fancy-text {
+  font-family: "adobe-garamond-pro",sans-serif;
+  font-style: italic;
+  letter-spacing: 1px;
+  margin-bottom: 17px;
+}

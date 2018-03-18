@@ -1,0 +1,97 @@
+#arrow-right {
+  position: absolute;
+  top: 45%;
+  right: -125%;
+  color: grey; }
+
+#arrow-left {
+  position: absolute;
+  top: 45%;
+  left: -125%;
+  color: grey; }
+
+.button {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  min-width: 200px;
+  margin-top: 30px; }
+
+.button:hover .border {
+  box-shadow: 0px 0px 10px 0px white; }
+
+.button:hover .border .left-plane, .button:hover .border .right-plane {
+  transform: translateX(0%); }
+
+.button:hover .text {
+  color: #121212; }
+
+.button .border {
+  transform: skewX(-20deg);
+  height: 32px;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+  transition: .10s ease-out; }
+
+.button .border .left-plane, .button .border .right-plane {
+  position: absolute;
+  background: white;
+  height: 32px;
+  width: 100px;
+  transition: .15s ease-out; }
+
+.button .border .left-plane {
+  left: 0;
+  transform: translateX(-100%); }
+
+.button .border .right-plane {
+  right: 0;
+  transform: translateX(100%); }
+
+.button .text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: .15s ease-out; }
+
+.x-mark {
+  right: 10px;
+  top: 10px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0; }
+
+.x-mark:hover .right {
+  transform: rotate(-45deg) scaleY(1.2); }
+
+.x-mark:hover .left {
+  transform: rotate(45deg) scaleY(1.2); }
+
+.x-mark .container-mark {
+  position: relative;
+  width: 20px;
+  height: 20px; }
+
+.x-mark .left, .x-mark .right {
+  width: 2px;
+  height: 20px;
+  background: white;
+  position: absolute;
+  border-radius: 3px;
+  transition: .15s ease-out;
+  margin: 0 auto;
+  left: 0;
+  right: 0; }
+
+.x-mark .right {
+  transform: rotate(-45deg); }
+
+.x-mark .left {
+  transform: rotate(45deg); }
+
+/*# sourceMappingURL=buttons.css.map */

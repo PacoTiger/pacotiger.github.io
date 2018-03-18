@@ -1,0 +1,55 @@
+@import "reset","carousel","modal","buttons","default";
+
+$fontColor: white;
+
+.intro-container {
+  position: absolute;
+  margin: 0 auto;
+  right: 0;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: $fontColor;
+  text-align: center;
+}
+
+
+.sky-container {
+  border: black solid;
+  position: absolute;
+  margin: 0 auto;
+  right: 0;
+  left: 0;
+  top: 22%;
+  color: black;
+  opacity: 0;
+}
+
+/* .sky-container__left, .sky-container__right {
+  display: inline-block;
+  vertical-align: top;
+  font-weight: bold;
+}
+
+.sky-container__left h2, .sky-container__right h2 {
+  font-family: 'brandon-grotesque', sans-serif;
+  font-size: 26px;
+  line-height: 26px;
+  margin: 0;
+}
+
+@media screen and (min-width: 860px) {
+  .sky-container__left h2, .sky-container__right h2 {
+    font-size: 72px;
+    line-height: 68px;
+  }
+}
+
+.sky-container__left {
+  margin-right: 5px;
+}
+
+.sky-container .thirty-one {
+  letter-spacing: 4px;
+} */
+
