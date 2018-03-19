@@ -45,9 +45,11 @@
 		</div>
 
 		<div id="carousel">
-			<figure><a href="#modal">7</a></figure>
+			<!-- <figure>
+				<a href="#modal">7</a>
+			</figure> -->
 <!-- BANDS APP PROJECT -->
-			<figure class="card">
+			<!-- <figure class="card">
 				<header>
 					<div>
 						<a href="https://github.com/PacoTiger/bandsApp/" target="_blank">
@@ -90,9 +92,9 @@
 		          </span>
 				</footer>
 			</figure>
-
+ -->
 <!-- QUOTE RANDOM MACHINE PROJECT -->
-			<figure class="card">
+			<!-- <figure class="card" id="prueba">
 				<header>
 					<div>
 						<a href="https://github.com/PacoTiger/quoteMachine" target="_blank">
@@ -131,7 +133,7 @@
 		            <i title="APIs" class="fas fa-server fa-2x"></i>
 		          </span>
 				</footer>
-			</figure>
+			</figure>  -->
 		</div>
 	</section>
 
@@ -159,7 +161,7 @@
     var init = function() {
       var carousel = document.getElementById('carousel'),
           navButtons = document.querySelectorAll('#navigation span'),
-          panelCount = carousel.children.length,
+          panelCount =  3,//carousel.children.length,
           theta = 0,
           panelWitdh = 210,
           r = (panelWitdh/2)/Math.tan(((360/2)/panelCount)*Math.PI/180);

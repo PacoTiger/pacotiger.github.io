@@ -11,6 +11,7 @@ var normalizedMouse = {
 	y: -180
 };
 
+// Cranberry Dream color #5F1925
 let cranberryDream = {
 	r: 95,
 	g: 25,
@@ -252,3 +253,44 @@ $('.x-mark').click(function () {
 });
 
 render();
+
+
+
+
+var requestURL = 'json/projects.json';
+var request = new XMLHttpRequest();
+request.open('GET', requestURL);
+request.responseType = 'json';
+request.send();
+
+var projectsInfo = 0;
+request.onload = function() {
+	projectsInfo = request.response;
+	console.log(projectsInfo);
+
+	for (let i = projectsInfo.length - 1; i >= 0; i--) {
+	
+	var tpmlHeader = "<header>" +
+					"<div>" +
+						"<a href=" + "'" + projectsInfo[i]['github'] + "' " + "target='_blank'>" +
+			              "<span class='gitIcon'>" +
+			                "<i class='fab fa-github-square fa-2x'></i>" +
+			              "</span>" +
+			            "</a>" +
+              
+              			"<a href=" + "'" + projectsInfo[i]['deploy'] + "' " + "target='_blank'>" +
+			              "<span class='uptitle'>" +
+			                "project name:" + 
+			              "</span>" +
+			              "<span class='title'>" +
+			                "<strong class='stroke'>" + projectsInfo[i]['title'] + "</strong>" +
+			              "</span>" +
+					"</div>" +
+				"</header>";
+	console.log(tpmlHeader);
+	$('#carousel').append("<figure class='card'>" + tpmlHeader + "</figure>");
+	}
+}
+
+//TEMPLATE
+
