@@ -1,5 +1,7 @@
-"use strict";
+
 /* globals THREE, $, TweenLite, Power3, TimelineMax  */
+
+
 
 var camera = undefined,
     scene = undefined,
@@ -254,8 +256,7 @@ $('.x-mark').click(function () {
 
 render();
 
-
-
+var prueba;
 
 var requestURL = 'json/projects.json';
 var request = new XMLHttpRequest();
@@ -268,9 +269,25 @@ request.onload = function() {
 	projectsInfo = request.response;
 	console.log(projectsInfo);
 
+	class Card {
+		constructor (header, body, footer){
+			this.header = header;
+			this.body = body;
+			this.footer = footer;
+		}
+
+		render() {
+			$('#carousel').append("<figure class='card'>" + this.header + this.body + this.footer + "</figure>");
+		}
+	}
+
+		
+
+	
+
 	for (let i = projectsInfo.length - 1; i >= 0; i--) {
 	
-	var tpmlHeader = "<header>" +
+	let tpmlHeader = "<header>" +
 					"<div>" +
 						"<a href=" + "'" + projectsInfo[i]['github'] + "' " + "target='_blank'>" +
 			              "<span class='gitIcon'>" +
@@ -287,9 +304,62 @@ request.onload = function() {
 			              "</span>" +
 					"</div>" +
 				"</header>";
-	console.log(tpmlHeader);
-	$('#carousel').append("<figure class='card'>" + tpmlHeader + "</figure>");
+
+	let tpmlBody = "<article>" +
+					 	projectsInfo[i]['description'] +
+		         		"<span class='endArticle'>" +
+		         			"<i class='fas fa-eye'></i>" +
+		         		"</span>" +
+					"</article>" +
+						"</a>";
+
+
+	let tpmlFooter = "<footer>" +
+		          /*"<span class='linkedinIcon'>" +
+		            "<a href='https://uk.linkedin.com/in/pacotiger' target='_blank' title='LinkedIn'>" +
+		              "<i class='fab fa-linkedin fa-2x'></i>" +
+		            "</a>" +
+		          "</span>" +*/
+		         
+		          "<span class='technicalIcons' id='technicalIcons" + projectsInfo[i]['id'] + "'>" +        
+		          	/*"<i title='Angular JS' class='fab fa-angular fa-2x'></i> " +
+		            "<i title='JavasScript' class='fab fa-js-square fa-2x'></i> " +
+		            "<i title='CSS3' class='fab fa-css3 fa-2x'></i> " +
+		            "<i title='JSON' class='fas fa-database fa-2x'></i>" +*/
+		          "</span>" +
+				"</footer>";
+
+				/*for (let n = projectsInfo[i]['technologies'].length - 1; n >= 0; n--) {
+			
+
+					let tpmlIcons = projectsInfo[i]['technologies'][n]['name'];
+					console.log(tpmlIcons);
+					
+				}*/
+	//Generate dinamic variable 'card_1', 'card_2'....
+	eval("var card_" + projectsInfo[i]['id'] + " = new Card(tpmlHeader, tpmlBody, tpmlFooter);");
+
+	eval("card_" + projectsInfo[i]['id'] + ".render();");
+
+	for (let n = projectsInfo[i]['technologies'].length - 1; n >= 0; n--) {
+			
+
+					let tpmlIcons = projectsInfo[i]['technologies'][n]['name'];
+					console.log(tpmlIcons);
+
+					$('#technicalIcons' + projectsInfo[i]['id']).append("<img title='" + projectsInfo[i]['technologies'][n]['name'] + "' src='" + projectsInfo[i]['technologies'][n]['icon'] + "'>");
+					
+					
 	}
+	
+
+	/*$('#carousel').append("<figure class='card'>" + tpmlHeader + tpmlBody + tpmlFooter + "</figure>");*/
+	}
+
+	function addTechIcons () {
+
+	}
+	
 }
 
 //TEMPLATE

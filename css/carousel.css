@@ -109,12 +109,12 @@
 .card article {
   font: 15px monospace, sans-serif;
   clear: left;
-  color: #00FF00;
+  color: #00FF00 !important;
   text-indent: 10px;
   text-align: justify;
   line-height: 0.95;
   width: 240px;
-  height: 128px;
+  height: 67%;
   border: 1px solid #000000;
   background-color: black;
   overflow: hidden; }
@@ -154,8 +154,15 @@
 .card footer .technicalIcons {
   color: black;
   position: absolute;
-  bottom: 3px;
-  right: 5px;
-  padding-top: 5px; }
+  bottom: 6px;
+  right: 3px;
+  width: 91%;
+  height: 13.5%; }
+
+.technicalIcons img {
+  height: 100%;
+  width: auto;
+  float: right;
+  padding: 1px; }
 
 /*# sourceMappingURL=carousel.css.map */

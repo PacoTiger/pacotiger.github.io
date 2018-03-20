@@ -5,11 +5,32 @@
 		"description": "My first single page application developed on AngularJS (1.X). It searches music bands really fast (instantaneous). Structured data storage using a JSON file as support.",
 		"github": "https://github.com/PacoTiger/bandsApp/",
 		"deploy": "https://pacotiger.github.io/bandsApp/",
-		"technologies": ["JS", 
-						"AngularJS", 
-						"CSS3", 
-						"JSON", 
-						"HTML5"]
+		"technologies": [ 
+							{
+								"name" : "JavaScript",
+								"icon": "icons/js.svg"							 	
+							},
+							{
+								"name" : "CSS3",
+								"icon" : "icons/css3.svg"
+							},
+							{
+								"name" : "jQuery",
+								"icon": "icons/jquery.png"							 	
+							},
+							{
+								"name" : "AngularJS",
+								"icon": "icons/angular.svg"							 	
+							},
+							{
+								"name" : "Materialize CSS Framework",
+								"icon": "icons/materialize.svg"							 	
+							},
+							{
+								"name" : "HTML5",
+								"icon": "icons/html5.svg"							 	
+							}
+						]
 	},
 	{
 		"id": "2",
@@ -17,11 +38,28 @@
 		"description": "Grab thousands of quotes through a remote public API to share on Twitter. This is ideal for gaining inspirational insights to share with your followers and more. For this design, I´ve used Bulma CSS Framework.",
 		"github": "https://github.com/PacoTiger/quoteMachine",
 		"deploy": "https://pacotiger.github.io/quoteMachine/",
-		"technologies": ["JS", 
-						"APIs", 
-						"CSS3", 
-						"BULMA",
-						"HTML5"]
+		"technologies": [ 
+							{
+								"name" : "JavaScript",
+								"icon": "icons/js.svg"							 	
+							},
+							{
+								"name" : "CSS3",
+								"icon" : "icons/css3.svg"
+							},
+							{
+								"name" : "HTML5",
+								"icon": "icons/html5.svg"							 	
+							},
+							{
+								"name" : "BULMA CSS FRAMEWORK",
+								"icon": "icons/bulma.png"							 	
+							},
+							{
+								"name" : "APIs",
+								"icon": "icons/open-graph.svg"							 	
+							}
+						]
 	},
 	{
 		"id": "3",
@@ -29,11 +67,16 @@
 		"description": "Bla bla bla bla, description is here.",
 		"github": "https://github.com/PacoTiger/quoteMachine",
 		"deploy": "https://pacotiger.github.io/quoteMachine/",
-		"technologies": ["JS", 
-						"APIs", 
-						"CSS3", 
-						"BULMA",
-						"HTML5"]
+		"technologies": [ 
+							{
+								"name" : "JavaScript",
+								"icon": "icons/js.svg"							 	
+							},
+							{
+								"name" : "CSS3",
+								"icon" : "icons/css3.svg"
+							}
+						]
 	}
 	
 ]
