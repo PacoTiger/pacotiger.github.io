@@ -1,6 +1,6 @@
 [
 	{
-		"id": "1",
+		"id": "0",
 		"title": "Bands App",
 		"description": "My first single page application developed on AngularJS (1.X). It searches music bands really fast (instantaneous). Structured data storage using a JSON file as support.",
 		"github": "https://github.com/PacoTiger/bandsApp/",
@@ -33,7 +33,7 @@
 						]
 	},
 	{
-		"id": "2",
+		"id": "1",
 		"title": "Quote Machine",
 		"description": "Grab thousands of quotes through a remote public API to share on Twitter. This is ideal for gaining inspirational insights to share with your followers and more. For this design, I´ve used Bulma CSS Framework.",
 		"github": "https://github.com/PacoTiger/quoteMachine",
@@ -62,7 +62,7 @@
 						]
 	},
 	{
-		"id": "3",
+		"id": "2",
 		"title": "Title here",
 		"description": "Bla bla bla bla, description is here.",
 		"github": "https://github.com/PacoTiger/quoteMachine",

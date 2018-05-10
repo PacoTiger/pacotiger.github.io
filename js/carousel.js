@@ -36,14 +36,15 @@ request.onload = function() {
   console.log('projectsInfo ', projectsInfo);
 
   class Card {
-    constructor (header, body, footer){
+    constructor (header, body, footer, modalNumber){
       this.header = header;
       this.body = body;
       this.footer = footer;
+      this.modal = 'modal' + modalNumber;
     }
 
     render() {
-      $('#carousel').append("<figure class='card'><a href='#modal'>" + this.header + this.body + this.footer + "</a></figure>");
+      $('#carousel').append("<figure class='card'><a href='#" + this.modal + "'>" + this.header + this.body + this.footer + "</a></figure>");
     }
 
     addIconTechnologies (projectN) {
@@ -58,7 +59,7 @@ request.onload = function() {
     }
   }
 
-  for (let i = projectsInfo.length - 1; i >= 0; i--) {
+  for (let i = 0; i <= projectsInfo.length; i++) {
   
     let tpmlHeader = "<header>" +
             "<div>" +
@@ -98,7 +99,7 @@ request.onload = function() {
           "</footer>";
           
     //Generate dinamic variable 'card_1', 'card_2' as an object instance....
-    eval("var card_" + projectsInfo[i]['id'] + " = new Card(tpmlHeader, tpmlBody, tpmlFooter);");
+    eval("var card_" + projectsInfo[i]['id'] + " = new Card(tpmlHeader, tpmlBody, tpmlFooter, i);");
 
     //card_X.render()
     eval("card_" + projectsInfo[i]['id'] + ".render();");
