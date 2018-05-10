@@ -50,7 +50,7 @@ table {
   display: block;
   position: absolute;
   width: 240px;
-  height: 205px;
+  height: 220px;
   border: 2px solid black;
   font-size: 14px;
   font-weight: bold;
@@ -122,15 +122,15 @@ table {
 
 .card .title {
   color: #5F1925;
-  font-family: arial;
+  font-family: georgia;
   text-transform: capitalize;
   padding-left: 3px; }
 
 .stroke {
   text-align: center;
   color: pink;
-  font-family: arial;
-  font-size: 15px;
+  font-family: georgia;
+  font-size: 28px;
   letter-spacing: 1px;
   text-shadow: -2px -2px 0px #cc0000, 2px -2px 0px #cc0000, -2px 2px 0px #cc0000, 2px 2px 0px #cc0000; }
 
@@ -385,7 +385,7 @@ a {
   right: 0;
   left: 0;
   top: 22%;
-  color: black;
+  color: #00FF00;
   opacity: 0; }
 
 /* .sky-container__left, .sky-container__right {

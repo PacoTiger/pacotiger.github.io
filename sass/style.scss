@@ -1,6 +1,8 @@
 @import "reset","carousel","modal","buttons","default";
 
 $fontColor: white;
+$CoolGreen: #00FF00;
+
 
 .intro-container {
   position: absolute;
@@ -21,7 +23,7 @@ $fontColor: white;
   right: 0;
   left: 0;
   top: 22%;
-  color: black;
+  color: $CoolGreen;
   opacity: 0;
 }
 

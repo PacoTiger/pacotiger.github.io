@@ -43,11 +43,10 @@ request.onload = function() {
     }
 
     render() {
-      $('#carousel').append("<figure class='card'>" + this.header + this.body + this.footer + "</figure>");
+      $('#carousel').append("<figure class='card'><a href='#modal'>" + this.header + this.body + this.footer + "</a></figure>");
     }
 
     addIconTechnologies (projectN) {
-
       for (let n = projectsInfo[projectN]['technologies'].length - 1; n >= 0; n--) {
               let tpmlIcons = projectsInfo[projectN]['technologies'][n]['name'];
               console.log(tpmlIcons);
@@ -63,13 +62,12 @@ request.onload = function() {
   
     let tpmlHeader = "<header>" +
             "<div>" +
-              "<a href=" + "'" + projectsInfo[i]['github'] + "' " + "target='_blank'>" +
-                      "<span class='gitIcon'>" +
-                        "<i class='fab fa-github-square fa-2x'></i>" +
-                      "</span>" +
-                    "</a>" +
-                
-                      "<a href=" + "'" + projectsInfo[i]['deploy'] + "' " + "target='_blank'>" +
+              // "<a href=" + "'" + projectsInfo[i]['github'] + "' " + "target='_blank'>" +
+              //         "<span class='gitIcon'>" +
+              //           "<i class='fab fa-github-square fa-2x'></i>" +
+              //         "</span>" +
+              //       "</a>" +
+              //         "<a href=" + "'" + projectsInfo[i]['deploy'] + "' " + "target='_blank'>" +
                       "<span class='uptitle'>" +
                         "project name:" + 
                       "</span>" +
@@ -84,8 +82,8 @@ request.onload = function() {
                   "<span class='endArticle'>" +
                     "<i class='fas fa-eye'></i>" +
                   "</span>" +
-            "</article>" +
-              "</a>";
+            "</article>";
+              // "</a>"
 
 
     let tpmlFooter = "<footer>" +

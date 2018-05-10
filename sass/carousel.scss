@@ -27,7 +27,7 @@
   display: block;
   position: absolute;
   width: 240px;
-  height: 205px;
+  height: 220px;
   border: 2px solid black;
   font-size: 14px;
   font-weight: bold;
@@ -90,15 +90,15 @@ box-shadow:inset 4px 4px 4px rgba(0,0,0,.3), inset -3px -3px 3px rgba(255,255,25
 }
 .card .title {
   color: #5F1925;
-  font-family: arial;
+  font-family: georgia;
   text-transform: capitalize;
   padding-left: 3px;
 }
 .stroke {
 text-align: center;
 color: pink;
-font-family: arial;
-font-size: 15px;
+font-family: georgia;
+font-size: 28px;
 letter-spacing: 1px;
 text-shadow: -2px -2px 0px #cc0000, 2px -2px 0px #cc0000, -2px 2px 0px #cc0000, 2px 2px 0px #cc0000;
 }

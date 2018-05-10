@@ -34,7 +34,7 @@
 	},
 	{
 		"id": "2",
-		"title": "Random Quote Machine",
+		"title": "Quote Machine",
 		"description": "Grab thousands of quotes through a remote public API to share on Twitter. This is ideal for gaining inspirational insights to share with your followers and more. For this design, I´ve used Bulma CSS Framework.",
 		"github": "https://github.com/PacoTiger/quoteMachine",
 		"deploy": "https://pacotiger.github.io/quoteMachine/",
