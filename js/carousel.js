@@ -1,3 +1,5 @@
+var arrayDeObjetos = [];
+
  var init = function() {
       var carousel = document.getElementById('carousel'),
           navButtons = document.querySelectorAll('#navigation span'),
@@ -19,15 +21,20 @@
       for (var i=0; i < 2; i++) {
         navButtons[i].addEventListener( 'click', onNavButtonClick, false);
       }
-    };
+      $("#carousel").on('click','figure.card', function() {
+        var id = parseInt($(this)[0].id);
+        arrayDeObjetos[id].showModal();
+      })
 
-init();
+
+
 
 var requestURL = 'json/projects.json';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
+
 
 var projectsInfo;
 
@@ -36,15 +43,20 @@ request.onload = function() {
   console.log('projectsInfo ', projectsInfo);
 
   class Card {
-    constructor (header, body, footer, modalNumber){
+    constructor (header, body, footer, modalNumber, modalWindow){
       this.header = header;
       this.body = body;
       this.footer = footer;
-      this.modal = 'modal' + modalNumber;
+      this.modal = modalNumber;
+      this.modalWindow = modalWindow;
     }
 
     render() {
-      $('#carousel').append("<figure class='card'><a href='#" + this.modal + "'>" + this.header + this.body + this.footer + "</a></figure>");
+      $('#carousel').append("<figure id='" + this.modal + "' class='card'><a href='#modal'>" + this.header + this.body + this.footer + "</a></figure>");
+    }
+
+    showModal() {
+      $('#modal .modalbox').empty().append(this.modalWindow);
     }
 
     addIconTechnologies (projectN) {
@@ -59,6 +71,7 @@ request.onload = function() {
     }
   }
 
+  
   for (let i = 0; i <= projectsInfo.length; i++) {
   
     let tpmlHeader = "<header>" +
@@ -97,15 +110,22 @@ request.onload = function() {
                 "<span class='technicalIcons' id='technicalIcons" + projectsInfo[i]['id'] + "'>" +        
                 "</span>" +
           "</footer>";
-          
-    //Generate dinamic variable 'card_1', 'card_2' as an object instance....
-    eval("var card_" + projectsInfo[i]['id'] + " = new Card(tpmlHeader, tpmlBody, tpmlFooter, i);");
 
+    let modalWindow = "<a href='#close' title='Close' class='close'>X</a>" +
+                      "<p>" + projectsInfo[i]['title'] + "</p>"; 
+    
+    //Generate dinamic variable 'card_1', 'card_2' as an object instance....
+    eval("var card_" + projectsInfo[i]['id'] + " = new Card(tpmlHeader, tpmlBody, tpmlFooter, i, modalWindow);");
+    arrayDeObjetos.push(eval("card_" + i));
     //card_X.render()
     eval("card_" + projectsInfo[i]['id'] + ".render();");
 
     //card_X.addIconTechnologies()
     eval("card_" + projectsInfo[i]['id'] + ".addIconTechnologies(i);");
-
   } 
-}
+
+};
+
+};
+
+init();
