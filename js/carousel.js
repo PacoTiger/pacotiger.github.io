@@ -1,6 +1,9 @@
 var arrayDeObjetos = [];
 
- var init = function() {
+
+
+ var init = function(){
+
       var carousel = document.getElementById('carousel'),
           navButtons = document.querySelectorAll('#navigation span'),
           panelCount =  3,//carousel.children.length,
@@ -57,6 +60,57 @@ request.onload = function() {
 
     showModal() {
       $('#modal .modalbox').empty().append(this.modalWindow);
+      
+      (function($) {
+    $(function() {
+        var jcarousel = $('.jcarousel');
+
+        jcarousel
+            .on('jcarousel:reload jcarousel:create', function () {
+                var carousel = $(this),
+                width = carousel.innerWidth();
+                console.log("width... ", width);
+                if (width >= 600) {
+                    width = width / 2;
+                } else if (width >= 380) {
+                    width = width / 1;
+                } else {
+                    width = 380;
+                }
+                console.log("width... after ", width);
+                carousel.jcarousel('items').css('width', Math.ceil(width) + 'px');
+            })
+            .jcarousel({
+                wrap: 'circular'
+            });
+
+        $('.jcarousel-control-prev')
+            .jcarouselControl({
+                target: '-=1'
+            });
+
+        $('.jcarousel-control-next')
+            .jcarouselControl({
+                target: '+=1'
+            });
+        $('.jcarousel-pagination')
+          .on('jcarouselpagination:active', 'a', function() {
+              $(this).addClass('active');
+          })
+          .on('jcarouselpagination:inactive', 'a', function() {
+              $(this).removeClass('active');
+          })
+          .on('click', function(e) {
+              e.preventDefault();
+          })
+          .jcarouselPagination({
+              perPage: 1,
+              item: function(page) {
+                  return '<a href="#' + page + '">' + page + '</a>';
+              }
+          });
+    });
+})(jQuery);
     }
 
     addIconTechnologies (projectN) {
@@ -112,7 +166,19 @@ request.onload = function() {
           "</footer>";
 
     let modalWindow = "<a href='#close' title='Close' class='close'>X</a>" +
-                      "<p>" + projectsInfo[i]['title'] + "</p>"; 
+                      "<p>" + projectsInfo[i]['title'] + "</p>" +
+
+                      "<div class='jcarousel-wrapper'>" +
+                      "<div class='jcarousel'>" +
+                          "<ul>" +
+                              "<li><img src='img_fjords.jpg'  alt=''></li>" +
+                              "<li><img src='img_forest.jpg'  alt=''></li>" +
+                              "<li><img src='img_mountains.jpg' alt=''></li>" +
+                          "</ul>" +
+                      "</div>" +
+
+                      "<a href='#' class='jcarousel-control-prev'>&lsaquo;</a>" +
+                      "<a href='#' class='jcarousel-control-next'>&rsaquo;</a>";
     
     //Generate dinamic variable 'card_1', 'card_2' as an object instance....
     eval("var card_" + projectsInfo[i]['id'] + " = new Card(tpmlHeader, tpmlBody, tpmlFooter, i, modalWindow);");
@@ -129,3 +195,4 @@ request.onload = function() {
 };
 
 init();
+
