@@ -1,7 +1,5 @@
 var arrayDeObjetos = [];
-
-
-
+var projectsInfo;
  var init = function(){
 
       var carousel = document.getElementById('carousel'),
@@ -16,8 +14,8 @@ var arrayDeObjetos = [];
             theta += ( 360 / panelCount ) * increment; 
             carousel.style.transform = 'translateZ(-' + r + 'px) rotateY(' + theta + 'deg)';
             console.log("r: ", r)
-			console.log("theta: ", theta)
-			console.log("panelCount: ", panelCount)
+      console.log("theta: ", theta)
+      console.log("panelCount: ", panelCount)
           };
 
       //Triggers
@@ -39,7 +37,7 @@ request.responseType = 'json';
 request.send();
 
 
-var projectsInfo;
+
 
 request.onload = function() {
   projectsInfo = request.response;
@@ -171,9 +169,9 @@ request.onload = function() {
                       "<div class='jcarousel-wrapper'>" +
                       "<div class='jcarousel'>" +
                           "<ul>" +
-                              "<li><img src='img_fjords.jpg'  alt=''></li>" +
-                              "<li><img src='img_forest.jpg'  alt=''></li>" +
-                              "<li><img src='img_mountains.jpg' alt=''></li>" +
+                              "<li><img src='img/" + projectsInfo[i]["img"][0] + "'  alt=''></li>" +
+                              "<li><img src='img/" + projectsInfo[i]["img"][1] + "'  alt=''></li>" +
+                              "<li><img src='img/" + projectsInfo[i]["img"][2] + "'  alt=''></li>" +
                           "</ul>" +
                       "</div>" +
 
