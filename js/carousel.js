@@ -141,20 +141,31 @@ var init = function(){
         "</span>" +
         "</footer>";
 
-      let modalWindow = "<a href='#close' title='Close' class='close'>X</a>" +
-        "<p>" + projectsInfo[i]['title'] + "</p>" +
-
+      let modalWindow = "<div id='modalM'>" +
+        "<a href='#close' title='Close' class='close'>X</a>" +
+        "<h1 class='strokeM'>" + projectsInfo[i]['title'] + "</h1>" +
         "<div class='jcarousel-wrapper'>" +
-        "<div class='jcarousel'>" +
-            "<ul>" +
-                "<li><img src='img/" + projectsInfo[i]["img"][0] + "'  alt=''></li>" +
-                "<li><img src='img/" + projectsInfo[i]["img"][1] + "'  alt=''></li>" +
-                "<li><img src='img/" + projectsInfo[i]["img"][2] + "'  alt=''></li>" +
-            "</ul>" +
+          "<div class='jcarousel'>" +
+              "<ul>" +
+                  "<li><img src='img/" + projectsInfo[i]["img"][0] + "'  alt=''></li>" +
+                  "<li><img src='img/" + projectsInfo[i]["img"][1] + "'  alt=''></li>" +
+                  "<li><img src='img/" + projectsInfo[i]["img"][2] + "'  alt=''></li>" +
+              "</ul>" +
+          "</div>" +
+          "<a href='#' class='jcarousel-control-prev'>&lsaquo;</a>" +
+          "<a href='#' class='jcarousel-control-next'>&rsaquo;</a>" +
         "</div>" +
+        "<div class='rowM'>" + 
+          "<p class='labelM'>" + projectsInfo[i]['category'] + "</p>" +
+          "<a href='" + projectsInfo[i]['github'] + "' target='_blank'>" + 
+            "<span class='gitIcon'><i class='fab fa-github-square fa-2x'></i></span>" +
+          "</a>" +
+        "</div>" +
+        "<p class='descriptionM'>" + projectsInfo[i]['description'] + "</p>" +
+        "<a href='" + projectsInfo[i]['deploy'] + "' class='btnDeploy' target='_blank'>Deploy</a>" +
+      "</div>";
 
-        "<a href='#' class='jcarousel-control-prev'>&lsaquo;</a>" +
-        "<a href='#' class='jcarousel-control-next'>&rsaquo;</a>";
+        
       
       //Generate dinamic variable 'card_1', 'card_2' as an object instance....
       eval("var card_" + projectsInfo[i]['id'] + " = new Card(tpmlHeader, tpmlBody, tpmlFooter, i, modalWindow);");

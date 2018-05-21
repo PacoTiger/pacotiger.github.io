@@ -2,6 +2,7 @@
 	{
 		"id": "0",
 		"title": "Bands App",
+		"category": "Proof of Concept",
 		"description": "My first single page application developed on AngularJS (1.X). It searches music bands really fast (instantaneous). Structured data storage using a JSON file as support.",
 		"github": "https://github.com/PacoTiger/bandsApp/",
 		"deploy": "https://pacotiger.github.io/bandsApp/",
@@ -36,6 +37,7 @@
 	{
 		"id": "1",
 		"title": "Quote Machine",
+		"category": "Little Project",
 		"description": "Grab thousands of quotes through a remote public API to share on Twitter. This is ideal for gaining inspirational insights to share with your followers and more. For this design, I´ve used Bulma CSS Framework.",
 		"github": "https://github.com/PacoTiger/quoteMachine",
 		"deploy": "https://pacotiger.github.io/quoteMachine/",
@@ -66,6 +68,7 @@
 	{
 		"id": "2",
 		"title": "Title here",
+		"category": "Proof of Concept, Little Project, Project",
 		"description": "Bla bla bla bla, description is here.",
 		"github": "https://github.com/PacoTiger/quoteMachine",
 		"deploy": "https://pacotiger.github.io/quoteMachine/",
