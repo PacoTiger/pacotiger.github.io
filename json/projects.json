@@ -67,12 +67,12 @@
 	},
 	{
 		"id": "2",
-		"title": "Title here",
-		"category": "Proof of Concept, Little Project, Project",
-		"description": "Bla bla bla bla, description is here.",
-		"github": "https://github.com/PacoTiger/quoteMachine",
-		"deploy": "https://pacotiger.github.io/quoteMachine/",
-		"img": ["responsive.png", "img_forest.jpg", "responsive.png"],
+		"title": "Comparison",
+		"category": "Project",
+		"description": "Energy price comparison web to get a quote and even switch your electric supplier. Backend made with PHP",
+		"github": "https://github.com/PacoTiger/",
+		"deploy": "https://www.smarter-power.co.uk/",
+		"img": ["comparison/Intro.jpg", "comparison/MeterDetails.jpg", "comparison/Step1.jpg"],
 		"technologies": [ 
 							{
 								"name" : "JavaScript",
@@ -81,7 +81,20 @@
 							{
 								"name" : "CSS3",
 								"icon" : "icons/css3.svg"
+							},
+							{
+								"name" : "PHP",
+								"icon" : "icons/php.svg"
+							},
+							{
+								"name" : "Laravel",
+								"icon" : "icons/laravel.svg"
+							},
+							{
+								"name" : "MySQL",
+								"icon" : "icons/mysql.svg"
 							}
+
 						]
 	}
 	
