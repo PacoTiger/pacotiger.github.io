@@ -17,6 +17,10 @@
     pointer-events: auto;
 }
 
+.modalM{
+    overflow-y: auto;
+}
+
 .modalbox{
     position: relative; 
     max-width: 800px; 
@@ -34,7 +38,7 @@
 .resize {
     margin: 6% auto;
     width: 0;
-    height:0;
+    height: 0;
 }
 
 .modalmask:target .resize{
@@ -152,4 +156,10 @@ text-decoration: none;
   background: #e2e2e2;
   /* background color more dark than original */
   box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.3), inset -3px -3px 3px rgba(255, 255, 255, 0.2); 
+}
+
+@media screen and (max-device-width : 620px){
+    #modalM {
+        height: 80vh;
+    }
 }

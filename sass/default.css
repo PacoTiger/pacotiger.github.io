@@ -14,11 +14,9 @@ h1 {
   h1 {
     font-size: 40px;
     line-height: 52px; } }
-a:link {
-  text-decoration: none; }
-
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #00FF00; }
 
 .hidde {
   display: none; }
