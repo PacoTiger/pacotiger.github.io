@@ -10,11 +10,12 @@
     opacity:0;
     transition: opacity 400ms ease-in;
     pointer-events: none;
-//    background: white;
+//  background: white;
 }
 .modalmask:target {
     opacity:1;
     pointer-events: auto;
+    
 }
 
 .modalbox{
@@ -23,7 +24,7 @@
     border: solid black;
     padding: 3px;
     background: rgba(97, 26, 38, 0.8);
-//    border-radius:3px;
+//  border-radius:3px;
     transition: all 500ms ease-in;
     z-index: 99999;
     -webkit-box-sizing: border-box;
