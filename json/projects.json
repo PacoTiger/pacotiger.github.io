@@ -70,7 +70,7 @@
 		"title": "Comparison",
 		"category": "Project",
 		"description": "Energy price comparison web to get a quote and even switch your electric supplier. Backend made with PHP",
-		"github": "https://github.com/PacoTiger/",
+		"github": "",
 		"deploy": "https://www.smarter-power.co.uk/",
 		"img": ["comparison/Intro.jpg", "comparison/MeterDetails.jpg", "comparison/Step1.jpg"],
 		"technologies": [ 
