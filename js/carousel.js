@@ -100,6 +100,12 @@ var init = function(){
                         "' src='" + projectsInfo[projectN]['technologies'][n]['icon'] + "'>");     
         }
       }
+
+      hiddeGithubIcon () {
+          var re = /class='gitIcon'/gi;
+          var addHidde = "class='gitIcon hidde'";
+          this.modalWindow = $(this)[0].modalWindow.replace(re, addHidde);
+        }
     }
 
   
@@ -175,6 +181,11 @@ var init = function(){
 
       //card_X.addIconTechnologies()
       eval("card_" + projectsInfo[i]['id'] + ".addIconTechnologies(i);");
+
+      //Hidde the Github btn if there isn't github link.
+      if (projectsInfo[i]['github'] == "") {
+        eval("card_" + projectsInfo[i]['id'] + ".hiddeGithubIcon();");
+      };
     }; //close for
   }; //close onload
 }; //close init
