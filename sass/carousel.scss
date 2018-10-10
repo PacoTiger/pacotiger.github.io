@@ -34,9 +34,9 @@
   padding: 5px 7px 7px 7px;
 }
 
-#carousel figure:nth-child(1) { background: hsla(350, 58%, 24%, 0.8) ;}
-#carousel figure:nth-child(2) { background: hsla(350, 58%, 24%, 0.8); }
-#carousel figure:nth-child(3) { background: hsla(350, 58%, 24%, 0.8); }
+#carousel figure:nth-child(1) { background: $CardColor;}
+#carousel figure:nth-child(2) { background: $CardColor;}
+#carousel figure:nth-child(3) { background: $CardColor;}
 
 
     #carousel figure:nth-child(1) {
@@ -87,18 +87,23 @@ box-shadow:inset 4px 4px 4px rgba(0,0,0,.3), inset -3px -3px 3px rgba(255,255,25
   color: black;
   font-family: arial;
   text-transform: uppercase;
+  position: absolute;
 }
 .card .title {
   color: #5F1925;
   font-family: georgia;
   text-transform: capitalize;
   padding-left: 3px;
+  position: absolute;
+  top: 5%;
+  overflow: hidden;
+  height: 3.1rem;
 }
 .stroke {
 text-align: center;
 color: pink;
 font-family: georgia;
-font-size: 28px;
+font-size: 3rem;
 letter-spacing: 1px;
 text-shadow: -2px -2px 0px #cc0000, 2px -2px 0px #cc0000, -2px 2px 0px #cc0000, 2px 2px 0px #cc0000;
 }
@@ -108,12 +113,15 @@ text-shadow: -2px -2px 0px #cc0000, 2px -2px 0px #cc0000, -2px 2px 0px #cc0000, 
   text-indent: 10px;
   text-align: justify;
   line-height: 0.95; 
-  width: 100%;
+  width: 94%;
   height: 67%;
   border: 1px solid #000000;
   background-color: black;
   overflow: hidden;
-  position: relative;
+  position: absolute;
+  top: 16%;
+  z-index: -1;
+  border-radius: 5px;
 }
 .card .text {
   position: absolute;
@@ -121,8 +129,8 @@ text-shadow: -2px -2px 0px #cc0000, 2px -2px 0px #cc0000, -2px 2px 0px #cc0000, 
 .card .endArticle {
   position: absolute;
   text-align: center;
-  display: block;
-  color: #E097AC;
+  bottom: 1px;
+  width: 100%;
 }
 .linkedinIcon {
   position: absolute;
@@ -149,6 +157,12 @@ text-shadow: -2px -2px 0px #cc0000, 2px -2px 0px #cc0000, -2px 2px 0px #cc0000, 
   right: 3px;
   width: 91%;
   height: 13.5%; //regula el tamaño al 13,5% relativo de la tarjeta
+  filter: grayscale(99%);
+  position: absolute;
+  bottom: 2%;
+  right: 1%;
+  width: 100%;
+  height: 12.5%;
   filter: grayscale(99%);
 }
 .technicalIcons img {

@@ -1,8 +1,4 @@
-@import "reset","carousel","modal","buttons","default","carousel";
-
-$fontColor: white;
-$CoolGreen: #00FF00;
-
+@import "variables","reset","carousel","modal","buttons","default","carousel";
 
 .intro-container {
   position: absolute;

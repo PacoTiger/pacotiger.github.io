@@ -57,13 +57,13 @@ table {
   padding: 5px 7px 7px 7px; }
 
 #carousel figure:nth-child(1) {
-  background: rgba(97, 26, 38, 0.8); }
+  background: rgba(24, 24, 180, 0.9); }
 
 #carousel figure:nth-child(2) {
-  background: rgba(97, 26, 38, 0.8); }
+  background: rgba(24, 24, 180, 0.9); }
 
 #carousel figure:nth-child(3) {
-  background: rgba(97, 26, 38, 0.8); }
+  background: rgba(24, 24, 180, 0.9); }
 
 #carousel figure:nth-child(1) {
   -webkit-transform: rotateY(0deg) translateZ(100px);
@@ -118,19 +118,24 @@ table {
   display: block;
   color: black;
   font-family: arial;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  position: absolute; }
 
 .card .title {
   color: #5F1925;
   font-family: georgia;
   text-transform: capitalize;
-  padding-left: 3px; }
+  padding-left: 3px;
+  position: absolute;
+  top: 5%;
+  overflow: hidden;
+  height: 3.1rem; }
 
 .stroke {
   text-align: center;
   color: pink;
   font-family: georgia;
-  font-size: 28px;
+  font-size: 3rem;
   letter-spacing: 1px;
   text-shadow: -2px -2px 0px #cc0000, 2px -2px 0px #cc0000, -2px 2px 0px #cc0000, 2px 2px 0px #cc0000; }
 
@@ -140,12 +145,15 @@ table {
   text-indent: 10px;
   text-align: justify;
   line-height: 0.95;
-  width: 100%;
+  width: 94%;
   height: 67%;
   border: 1px solid #000000;
   background-color: black;
   overflow: hidden;
-  position: relative; }
+  position: absolute;
+  top: 16%;
+  z-index: -1;
+  border-radius: 5px; }
 
 .card .text {
   position: absolute; }
@@ -153,8 +161,8 @@ table {
 .card .endArticle {
   position: absolute;
   text-align: center;
-  display: block;
-  color: #E097AC; }
+  bottom: 1px;
+  width: 100%; }
 
 .linkedinIcon {
   position: absolute;
@@ -190,6 +198,12 @@ table {
   right: 3px;
   width: 91%;
   height: 13.5%;
+  filter: grayscale(99%);
+  position: absolute;
+  bottom: 2%;
+  right: 1%;
+  width: 100%;
+  height: 12.5%;
   filter: grayscale(99%); }
 
 .technicalIcons img {
@@ -507,13 +521,13 @@ a {
   padding: 5px 7px 7px 7px; }
 
 #carousel figure:nth-child(1) {
-  background: rgba(97, 26, 38, 0.8); }
+  background: rgba(24, 24, 180, 0.9); }
 
 #carousel figure:nth-child(2) {
-  background: rgba(97, 26, 38, 0.8); }
+  background: rgba(24, 24, 180, 0.9); }
 
 #carousel figure:nth-child(3) {
-  background: rgba(97, 26, 38, 0.8); }
+  background: rgba(24, 24, 180, 0.9); }
 
 #carousel figure:nth-child(1) {
   -webkit-transform: rotateY(0deg) translateZ(100px);
@@ -568,19 +582,24 @@ a {
   display: block;
   color: black;
   font-family: arial;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  position: absolute; }
 
 .card .title {
   color: #5F1925;
   font-family: georgia;
   text-transform: capitalize;
-  padding-left: 3px; }
+  padding-left: 3px;
+  position: absolute;
+  top: 5%;
+  overflow: hidden;
+  height: 3.1rem; }
 
 .stroke {
   text-align: center;
   color: pink;
   font-family: georgia;
-  font-size: 28px;
+  font-size: 3rem;
   letter-spacing: 1px;
   text-shadow: -2px -2px 0px #cc0000, 2px -2px 0px #cc0000, -2px 2px 0px #cc0000, 2px 2px 0px #cc0000; }
 
@@ -590,12 +609,15 @@ a {
   text-indent: 10px;
   text-align: justify;
   line-height: 0.95;
-  width: 100%;
+  width: 94%;
   height: 67%;
   border: 1px solid #000000;
   background-color: black;
   overflow: hidden;
-  position: relative; }
+  position: absolute;
+  top: 16%;
+  z-index: -1;
+  border-radius: 5px; }
 
 .card .text {
   position: absolute; }
@@ -603,8 +625,8 @@ a {
 .card .endArticle {
   position: absolute;
   text-align: center;
-  display: block;
-  color: #E097AC; }
+  bottom: 1px;
+  width: 100%; }
 
 .linkedinIcon {
   position: absolute;
@@ -640,6 +662,12 @@ a {
   right: 3px;
   width: 91%;
   height: 13.5%;
+  filter: grayscale(99%);
+  position: absolute;
+  bottom: 2%;
+  right: 1%;
+  width: 100%;
+  height: 12.5%;
   filter: grayscale(99%); }
 
 .technicalIcons img {

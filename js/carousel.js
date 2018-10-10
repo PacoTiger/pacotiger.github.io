@@ -119,12 +119,12 @@ var init = function(){
           //         "</span>" +
           //       "</a>" +
           //         "<a href=" + "'" + projectsInfo[i]['deploy'] + "' " + "target='_blank'>" +
-                  "<span class='uptitle'>" +
+                  "<div class='uptitle'>" +
                     "project name:" + 
-                  "</span>" +
-                  "<span class='title'>" +
+                  "</div>" +
+                  "<div class='title'>" +
                     "<strong class='stroke'>" + projectsInfo[i]['title'] + "</strong>" +
-                  "</span>" +
+                  "</div>" +
         "</div>" +
         "</header>";
 
@@ -133,7 +133,7 @@ var init = function(){
         projectsInfo[i]['description'] +
             "</div>" +
             "<div class='endArticle'>" +
-              "botton aqui" +
+              "<a href='#' class='falsebttn'> bttnHere </a>" +
             "</div>" +
         "</article>";
         // "</a>"
