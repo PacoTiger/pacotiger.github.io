@@ -23,7 +23,7 @@
     max-width: 800px; 
     border: solid black;
     padding: 3px;
-    background: rgba(97, 26, 38, 0.8);
+    background: $CardColor;
 //  border-radius:3px;
     transition: all 500ms ease-in;
     z-index: 99999;
