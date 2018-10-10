@@ -194,17 +194,12 @@ table {
 .card footer .technicalIcons {
   color: black;
   position: absolute;
-  bottom: 6px;
-  right: 3px;
-  width: 91%;
-  height: 13.5%;
-  filter: grayscale(99%);
-  position: absolute;
   bottom: 2%;
   right: 1%;
   width: 100%;
-  height: 12.5%;
-  filter: grayscale(99%); }
+  height: 2.5rem;
+  filter: grayscale(99%);
+  overflow: hidden; }
 
 .technicalIcons img {
   height: 100%;
@@ -658,17 +653,12 @@ a {
 .card footer .technicalIcons {
   color: black;
   position: absolute;
-  bottom: 6px;
-  right: 3px;
-  width: 91%;
-  height: 13.5%;
-  filter: grayscale(99%);
-  position: absolute;
   bottom: 2%;
   right: 1%;
   width: 100%;
-  height: 12.5%;
-  filter: grayscale(99%); }
+  height: 2.5rem;
+  filter: grayscale(99%);
+  overflow: hidden; }
 
 .technicalIcons img {
   height: 100%;
