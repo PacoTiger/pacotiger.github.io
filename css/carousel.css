@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .container {
-  width: 250px;
-  height: 140px;
+  width: 35vh;
+  height: 35vh;
   position: relative;
   margin: 0 auto 40px;
   border: 1px solid #CCC;
@@ -21,8 +21,8 @@
 #carousel figure {
   display: block;
   position: absolute;
-  width: 240px;
-  height: 220px;
+  width: 100%;
+  height: 100%;
   border: 2px solid black;
   font-size: 14px;
   font-weight: bold;
@@ -53,7 +53,7 @@
   transform: rotateY(240deg) translateZ(100px); }
 
 .card {
-  width: 240px;
+  width: 100%;
   border: solid black;
   padding: 5px;
   position: relative; }
@@ -107,18 +107,23 @@
   text-shadow: -2px -2px 0px #cc0000, 2px -2px 0px #cc0000, -2px 2px 0px #cc0000, 2px 2px 0px #cc0000; }
 
 .card article {
-  font: 15px monospace, sans-serif;
+  font: 1.6rem monospace, sans-serif;
   clear: left;
   text-indent: 10px;
   text-align: justify;
   line-height: 0.95;
-  width: 240px;
+  width: 100%;
   height: 67%;
   border: 1px solid #000000;
   background-color: black;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
+
+.card .text {
+  position: absolute; }
 
 .card .endArticle {
+  position: absolute;
   text-align: center;
   display: block;
   color: #E097AC; }
@@ -156,7 +161,8 @@
   bottom: 6px;
   right: 3px;
   width: 91%;
-  height: 13.5%; }
+  height: 13.5%;
+  filter: grayscale(99%); }
 
 .technicalIcons img {
   height: 100%;

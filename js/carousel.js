@@ -129,10 +129,12 @@ var init = function(){
         "</header>";
 
       let tpmlBody = "<article>" +
+            "<div class='text'>" +
         projectsInfo[i]['description'] +
-            "<span class='endArticle'>" +
-              "<i class='fas fa-eye'></i>" +
-            "</span>" +
+            "</div>" +
+            "<div class='endArticle'>" +
+              "botton aqui" +
+            "</div>" +
         "</article>";
         // "</a>"
 
