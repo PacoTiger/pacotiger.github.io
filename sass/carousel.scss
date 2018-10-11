@@ -2,13 +2,12 @@
 //CARDS
 
 //Carousel
-.container {
+.container { 
+  position: relative;
   width: 35vh;
   height: 35vh;
-  position: relative;
   margin: 0 auto 40px;
-  border: 1px solid #CCC;
-  perspective: 1100px;
+  perspective: 1000px;
 }
 
 #carousel {
@@ -24,19 +23,19 @@
 }
 
 #carousel figure {
-  display: block;
   position: absolute;
-  width: 100%;
-  height: 100%;
-  border: 2px solid black;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 5px 7px 7px 7px;
+  display: flex;
+  flex-direction:column;
+  margin: 0 auto;
+  height: 35vh;
+  width: 35vh;
+  min-width: 222px;
+  min-height: 222px;
 }
 
-#carousel figure:nth-child(1) { background: $CardColor;}
-#carousel figure:nth-child(2) { background: $CardColor;}
-#carousel figure:nth-child(3) { background: $CardColor;}
+// #carousel figure:nth-child(1) { background: $CardColor;}
+// #carousel figure:nth-child(2) { background: $CardColor;}
+// #carousel figure:nth-child(3) { background: $CardColor;}
 
 
     #carousel figure:nth-child(1) {
@@ -57,112 +56,158 @@
 
 
 //CARDS
-.card {
-  width: 100%;
-  border: solid black;
-  padding: 5px;
-  position: relative;
-}
-.card .gitIcon {
-  float: left;
-  box-shadow: inset 3px 3px 3px rgba(255,255,255,.7), inset -2px -2px 3px rgba(0,0,0,.1), 2px 2px 10px rgba(0,0,0,.1);
-  width: 33px;  /* Ancho del botón */
-  border: 1px solid #9b9bff; /* Borde */
-  background: white;  /* Fondo */
-  text-align: center;  /* Alineación del texto */
-  text-shadow: -1px -1px rgba(0,0,0,.2);  /* Sombra del texto */
-  border-radius: 5px;  /* Bordes redondos */
-  color: black;  /* Color del texto */
-  margin-bottom: 5px;
-}
-.gitIcon:active /* Al presionarse el botón */ {
-text-shadow: 1px 1px rgba(0,0,0,.3);  /* Sombra del texto */
-background:#e2e2e2;  /* Fondo más oscuro que el original */
-box-shadow:inset 4px 4px 4px rgba(0,0,0,.3), inset -3px -3px 3px rgba(255,255,255,.2);
-}
-.card .uptitle {
-  font-variant: small-caps;
-  font-size: 0.8em;
-  display: block;
-  color: black;
-  font-family: arial;
-  text-transform: uppercase;
-  position: absolute;
-}
-.card .title {
-  color: #5F1925;
-  font-family: georgia;
-  text-transform: capitalize;
-  padding-left: 3px;
-  position: absolute;
-  top: 5%;
+// .card {
+//   width: 100%;
+//   border: solid black;
+//   padding: 5px;
+//   position: relative;
+// }
+// .card .gitIcon {
+//   float: left;
+//   box-shadow: inset 3px 3px 3px rgba(255,255,255,.7), inset -2px -2px 3px rgba(0,0,0,.1), 2px 2px 10px rgba(0,0,0,.1);
+//   width: 33px;  /* Ancho del botón */
+//   border: 1px solid #9b9bff; /* Borde */
+//   background: white;  /* Fondo */
+//   text-align: center;  /* Alineación del texto */
+//   text-shadow: -1px -1px rgba(0,0,0,.2);  /* Sombra del texto */
+//   border-radius: 5px;  /* Bordes redondos */
+//   color: black;  /* Color del texto */
+//   margin-bottom: 5px;
+// }
+// .gitIcon:active /* Al presionarse el botón */ {
+// text-shadow: 1px 1px rgba(0,0,0,.3);  /* Sombra del texto */
+// background:#e2e2e2;  /* Fondo más oscuro que el original */
+// box-shadow:inset 4px 4px 4px rgba(0,0,0,.3), inset -3px -3px 3px rgba(255,255,255,.2);
+// }
+// .card .uptitle {
+//   font-variant: small-caps;
+//   font-size: 0.8em;
+//   display: block;
+//   color: black;
+//   font-family: arial;
+//   text-transform: uppercase;
+//   position: absolute;
+// }
+// .card .title {
+//   color: #5F1925;
+//   font-family: georgia;
+//   text-transform: capitalize;
+//   padding-left: 3px;
+//   position: absolute;
+//   top: 5%;
+//   overflow: hidden;
+//   height: 3.1rem;
+// }
+// .stroke {
+// text-align: center;
+// color: pink;
+// font-family: georgia;
+// font-size: 3rem;
+// letter-spacing: 1px;
+// text-shadow: -2px -2px 0px #cc0000, 2px -2px 0px #cc0000, -2px 2px 0px #cc0000, 2px 2px 0px #cc0000;
+// }
+// .card article {
+//   font: 1.6rem monospace, sans-serif;
+//   clear: left;
+//   text-indent: 10px;
+//   text-align: justify;
+//   line-height: 0.95; 
+//   width: 94%;
+//   height: 67%;
+//   border: 1px solid #000000;
+//   background-color: black;
+//   overflow: hidden;
+//   position: absolute;
+//   top: 16%;
+//   z-index: -1;
+//   border-radius: 5px;
+// }
+// .card .text {
+//   position: absolute;
+// }
+// .card .endArticle {
+//   position: absolute;
+//   text-align: center;
+//   bottom: 1px;
+//   width: 100%;
+// }
+// .linkedinIcon {
+//   position: absolute;
+//   bottom: 3px;
+//   left: 5px;
+//   box-shadow: inset 3px 3px 3px rgba(255,255,255,.7), inset -2px -2px 3px rgba(0,0,0,.1), 2px 2px 10px rgba(0,0,0,.1);
+//   width: 33px;  /* Ancho del botón */
+//   border: 1px solid #9b9bff; /* Borde */
+//   background: #f7f7ff;  /* Fondo */
+//   text-align: center;  /* Alineación del texto */
+//   text-shadow: -1px -1px rgba(0,0,0,.2);  /* Sombra del texto */
+//   border-radius: 5px;  /* Bordes redondos */
+//   color: white;  /* Color del texto */
+// }
+// .linkedinIcon:active /* Al presionarse el botón */ {
+//   text-shadow: 1px 1px rgba(0,0,0,.3);  /* Sombra del texto */
+//   background:#3d3dff;  /* Fondo más oscuro que el original */
+//   box-shadow:inset 4px 4px 4px rgba(0,0,0,.3), inset -3px -3px 3px rgba(255,255,255,.2);
+// }
+// .card footer .technicalIcons {
+//   color: black;
+//   position: absolute;
+//   bottom: 2%;
+//   right: 1%;
+//   width: 100%;
+//   height: 2.5rem;
+//   filter: grayscale(99%);
+//   overflow: hidden;
+// }
+// .technicalIcons img {
+//   height: 100%;
+//   width: auto;
+//   float: right;
+//   padding: 1px;
+// }
+//new design with flex-box
+
+.card header, .card article, .card footer {
+  background: $CardColor;
   overflow: hidden;
-  height: 3.1rem;
+  flex: 1;
 }
-.stroke {
-text-align: center;
-color: pink;
-font-family: georgia;
-font-size: 3rem;
-letter-spacing: 1px;
-text-shadow: -2px -2px 0px #cc0000, 2px -2px 0px #cc0000, -2px 2px 0px #cc0000, 2px 2px 0px #cc0000;
+
+.card header {
+  flex-grow: 2;
+  border-radius: 0px 47% 0px 0px;
 }
+
 .card article {
-  font: 1.6rem monospace, sans-serif;
-  clear: left;
-  text-indent: 10px;
-  text-align: justify;
-  line-height: 0.95; 
-  width: 94%;
-  height: 67%;
-  border: 1px solid #000000;
-  background-color: black;
-  overflow: hidden;
-  position: absolute;
-  top: 16%;
-  z-index: -1;
-  border-radius: 5px;
-}
-.card .text {
-  position: absolute;
-}
-.card .endArticle {
-  position: absolute;
+  position: relative;
+  flex-grow: 10;
+} 
+.card article .falseBttn {
+  width: 100%;
+  margin: 0 auto;
   text-align: center;
-  bottom: 1px;
-  width: 100%;
-}
-.linkedinIcon {
   position: absolute;
-  bottom: 3px;
-  left: 5px;
-  box-shadow: inset 3px 3px 3px rgba(255,255,255,.7), inset -2px -2px 3px rgba(0,0,0,.1), 2px 2px 10px rgba(0,0,0,.1);
-  width: 33px;  /* Ancho del botón */
-  border: 1px solid #9b9bff; /* Borde */
-  background: #f7f7ff;  /* Fondo */
-  text-align: center;  /* Alineación del texto */
-  text-shadow: -1px -1px rgba(0,0,0,.2);  /* Sombra del texto */
-  border-radius: 5px;  /* Bordes redondos */
-  color: white;  /* Color del texto */
+  bottom: 5%;
 }
-.linkedinIcon:active /* Al presionarse el botón */ {
-  text-shadow: 1px 1px rgba(0,0,0,.3);  /* Sombra del texto */
-  background:#3d3dff;  /* Fondo más oscuro que el original */
-  box-shadow:inset 4px 4px 4px rgba(0,0,0,.3), inset -3px -3px 3px rgba(255,255,255,.2);
+
+.card footer {
+  position: relative;
+  border-radius: 0px 0px 0px 47%;
 }
-.card footer .technicalIcons {
-  color: black;
+.card footer div {
   position: absolute;
-  bottom: 2%;
-  right: 1%;
-  width: 100%;
-  height: 2.5rem;
+  text-align: right;
+  width: 90%;
+  height: 90%;
+  padding-right:5%;
+}
+.card footer img {
+  height: 90%;
   filter: grayscale(99%);
-  overflow: hidden;
+  transition: 0.3s;
+  display: inline-block;
 }
-.technicalIcons img {
-  height: 100%;
-  width: auto;
-  float: right;
-  padding: 1px;
+.card footer img:hover {
+  filter: grayscale(20%);
+  transition: 0.3s; 
 }

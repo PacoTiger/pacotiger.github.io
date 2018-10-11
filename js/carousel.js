@@ -112,7 +112,6 @@ var init = function(){
     for (let i = 0; i <= projectsInfo.length; i++) {
     
       let tpmlHeader = "<header>" +
-        "<div>" +
           // "<a href=" + "'" + projectsInfo[i]['github'] + "' " + "target='_blank'>" +
           //         "<span class='gitIcon'>" +
           //           "<i class='fab fa-github-square fa-2x'></i>" +
@@ -123,9 +122,8 @@ var init = function(){
                     "project name:" + 
                   "</div>" +
                   "<div class='title'>" +
-                    "<strong class='stroke'>" + projectsInfo[i]['title'] + "</strong>" +
+                    projectsInfo[i]['title'] +
                   "</div>" +
-        "</div>" +
         "</header>";
 
       let tpmlBody = "<article>" +
@@ -145,8 +143,8 @@ var init = function(){
           "</a>" +
         "</span>" +*/
        
-        "<span class='technicalIcons' id='technicalIcons" + projectsInfo[i]['id'] + "'>" +        
-        "</span>" +
+        "<div class='technicalIcons' id='technicalIcons" + projectsInfo[i]['id'] + "'>" +        
+        "</div>" +
         "</footer>";
 
       let modalWindow = "<div id='modalM'>" +
