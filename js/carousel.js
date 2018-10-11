@@ -127,11 +127,11 @@ var init = function(){
         "</header>";
 
       let tpmlBody = "<article>" +
-            "<div class='text'>" +
+            "<div class='description'>" +
         projectsInfo[i]['description'] +
-            "</div>" +
-            "<div class='endArticle'>" +
-              "<a href='#' class='falsebttn'> bttnHere </a>" +
+              "<div class=''>" +
+              "<a href='#' class='falsebttn'>Open</a>" +
+              "</div>" +
             "</div>" +
         "</article>";
         // "</a>"
