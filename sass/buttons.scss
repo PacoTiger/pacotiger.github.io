@@ -12,57 +12,71 @@
   color: grey;
 }
 
-.button {
+#bttnIntro {
   position: relative;
   cursor: pointer;
   display: inline-block;
   font-family: sans-serif;
   text-transform: uppercase;
-  min-width: 200px;
-  margin-top: 30px;
+  //min-width: 130px;
+  width: $bttnIntroWidth;
+    .border {
+      transform: skewX(-20deg);
+      //min-height: 130px;
+      height: $bttnIntroHeight;
+      border-radius: 47% 0.5% 47% 0.5%;
+      overflow: hidden;
+      position: relative;
+      transition: .10s ease-out;
+        .left-plane, .right-plane {
+          position: absolute;
+          background: white;
+          width: $bttnIntroWidth/2;
+          height: $bttnIntroHeight;
+          transition: .25s ease-out;
+        }
+        .left-plane {
+          left: 0px;
+          transform: translateX(-1%);
+          transition: .25s ease-out;
+        }
+        .right-plane {
+          right: 0px;
+          transform: translateX(1%);
+          transition: .25s ease-out;
+        }
+    }
+    .text {
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: .15s ease-out;
+      display: none;
+    }
 }
 
-.button:hover .border {
-  box-shadow: 0px 0px 10px 0px white;
+#bttnIntro:hover {
+    .border {
+      box-shadow: 0px 0px 30px 0px red;
+        .left-plane {
+          transform: translateX(-90%);
+          box-shadow: 0px 0px 50px 0px white;
+        }
+        .right-plane {
+          transform: translateX(90%);
+          box-shadow: 0px 0px 50px 0px white;
+        }
+    }
+    .text {
+      color: white;
+      display: inline-block;
+      text-shadow: 0 0 5px white, 0 0 5px red;
+      font-size: 1.8rem;
+    }
 }
-.button:hover .border .left-plane, .button:hover .border .right-plane {
-  transform: translateX(0%);
-}
-.button:hover .text {
-  color: #121212;
-}
-.button .border {
-  
-  transform: skewX(-20deg);
-  height: 32px;
-  border-radius: 3px;
-  overflow: hidden;
-  position: relative;
-  transition: .10s ease-out;
-}
-.button .border .left-plane, .button .border .right-plane {
-  position: absolute;
-  background: white;
-  height: 32px;
-  width: 100px;
-  transition: .15s ease-out;
-}
-.button .border .left-plane {
-  left: 0;
-  transform: translateX(-100%);
-}
-.button .border .right-plane {
-  right: 0;
-  transform: translateX(100%);
-}
-.button .text {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: .15s ease-out;
-}
+
 
 .x-mark {
   right: 10px;
