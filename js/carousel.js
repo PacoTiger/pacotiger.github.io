@@ -83,7 +83,7 @@ var init = function(){
       }
 
       render() {
-        $('#carousel').append("<figure id='" + this.modal + "' class='card'><a href='#modal'>" + this.header + this.body + this.footer + "</a></figure>");
+        $('#carousel').append("<figure id='" + this.modal + "' class='card'>" + this.header + this.body + this.footer + "</figure>");
       }
 
       showModal() {
@@ -129,9 +129,13 @@ var init = function(){
       let tpmlBody = "<article>" +
             "<div class='description'>" +
         projectsInfo[i]['description'] +
-              "<div class=''>" +
-              "<a href='#' class='falsebttn'>Open</a>" +
-              "</div>" +
+            "</div>" +
+            "<div class='bttnFalse'>" +
+                "<div class='border'>" +
+                  "<div class='left-plane'></div>" +
+                  "<div class='right-plane'></div>" +
+                "</div>" +  
+                "<div class='text'>Open</div>" +
             "</div>" +
         "</article>";
         // "</a>"
@@ -191,4 +195,3 @@ var init = function(){
 }; //close init
 
 init();
-

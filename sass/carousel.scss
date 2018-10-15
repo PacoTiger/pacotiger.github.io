@@ -111,21 +111,21 @@
 // #carousel figure:nth-child(3) { background: $CardColor;}
 
 
-    #carousel figure:nth-child(1) {
-      -webkit-transform: rotateY(   0deg ) translateZ( 100px );
-         -moz-transform: rotateY(   0deg ) translateZ( 100px );
-              transform: rotateY(   0deg ) translateZ( 100px );
-    }
-    #carousel figure:nth-child(2) {
-      -webkit-transform: rotateY(  120deg ) translateZ( 100px );
-         -moz-transform: rotateY(  120deg ) translateZ( 100px );
-              transform: rotateY(  120deg ) translateZ( 100px );
-    }
-    #carousel figure:nth-child(3) {
-      -webkit-transform: rotateY(  240deg ) translateZ( 100px );
-         -moz-transform: rotateY(  240deg ) translateZ( 100px );
-              transform: rotateY(  240deg ) translateZ( 100px );
-    }
+#carousel figure:nth-child(1) {
+  -webkit-transform: rotateY(   0deg ) translateZ( 100px );
+     -moz-transform: rotateY(   0deg ) translateZ( 100px );
+          transform: rotateY(   0deg ) translateZ( 100px );
+}
+#carousel figure:nth-child(2) {
+  -webkit-transform: rotateY(  120deg ) translateZ( 100px );
+     -moz-transform: rotateY(  120deg ) translateZ( 100px );
+          transform: rotateY(  120deg ) translateZ( 100px );
+}
+#carousel figure:nth-child(3) {
+  -webkit-transform: rotateY(  240deg ) translateZ( 100px );
+     -moz-transform: rotateY(  240deg ) translateZ( 100px );
+          transform: rotateY(  240deg ) translateZ( 100px );
+}
 
 
  
