@@ -1,21 +1,21 @@
 /*
-Error: Undefined variable: "$CardColor".
-        on line 37 of sass/carousel.scss
+Error: Undefined variable: "$wCard".
+        on line 30 of sass/carousel.scss
 
-32:   font-size: 14px;
-33:   font-weight: bold;
-34:   padding: 5px 7px 7px 7px;
-35: }
-36: 
-37: #carousel figure:nth-child(1) { background: $CardColor;}
-38: #carousel figure:nth-child(2) { background: $CardColor;}
-39: #carousel figure:nth-child(3) { background: $CardColor;}
-40: 
-41: 
-42:     #carousel figure:nth-child(1) {
+25: #carousel figure {
+26:   position: absolute;
+27:   display: flex;
+28:   flex-direction:column;
+29:   margin: 0 auto;
+30:   width: $wCard;
+31:   height: $hCard;
+32:   min-width: $minWCard;
+33:   min-height: $minHCard;
+34:     header, article, footer {
+35:       background: $CardColor;
 
 Backtrace:
-sass/carousel.scss:37
+sass/carousel.scss:30
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -69,4 +69,4 @@ C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$CardColor\".\A         on line 37 of sass/carousel.scss\A \A 32:   font-size: 14px;\A 33:   font-weight: bold;\A 34:   padding: 5px 7px 7px 7px;\A 35: }\A 36: \A 37: #carousel figure:nth-child(1) { background: $CardColor;}\A 38: #carousel figure:nth-child(2) { background: $CardColor;}\A 39: #carousel figure:nth-child(3) { background: $CardColor;}\A 40: \A 41: \A 42:     #carousel figure:nth-child(1) {"; }
+  content: "Error: Undefined variable: \"$wCard\".\A         on line 30 of sass/carousel.scss\A \A 25: #carousel figure {\A 26:   position: absolute;\A 27:   display: flex;\A 28:   flex-direction:column;\A 29:   margin: 0 auto;\A 30:   width: $wCard;\A 31:   height: $hCard;\A 32:   min-width: $minWCard;\A 33:   min-height: $minHCard;\A 34:     header, article, footer {\A 35:       background: $CardColor;"; }

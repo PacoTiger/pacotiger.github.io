@@ -1,15 +1,12 @@
 
 /* globals THREE, $, TweenLite, Power3, TimelineMax  */
 
-var camera = undefined,
-    scene = undefined,
-    renderer = undefined;
-var plane = undefined;
-var raycaster = new THREE.Raycaster();
-var normalizedMouse = {
-	x: 0,
-	y: -180
-};
+var camera          = undefined,
+scene               = undefined,
+renderer            = undefined,
+plane               = undefined;
+var raycaster       = new THREE.Raycaster();
+var normalizedMouse = {	x: 0, y: -180 };
 
 // Cranberry Dream color #5F1925
 let cranberryDream = {
@@ -36,7 +33,7 @@ var darkBlue = {
 	b: 74
 };
 
-var baseColorRGB = cranberryDream;
+var baseColorRGB = darkBlue;
 var baseColor = "rgb(" + baseColorRGB.r + "," + baseColorRGB.g + "," + baseColorRGB.b + ")";
 var nearStars = undefined,
     farStars = undefined,

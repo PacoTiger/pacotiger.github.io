@@ -1,47 +1,46 @@
 //Modal
+// <div.sky-container opacity:0 pos:absolute 
+//   <div#modal.modalmask pos:fixed
+//     <div.modalbox .resize pos:relative 
+//       <div #modalM
+//            <a #close.close pos:absolute
+
 .modalmask {
     position: fixed;
-    font-family: Arial, sans-serif;
     top: 35px;
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 99998;
-    opacity:0;
+    opacity: 0;
     transition: opacity 400ms ease-in;
     pointer-events: none;
-//  background: white;
+    overflow-y: scroll;      
 }
-.modalmask:target {
-    opacity:1;
-    pointer-events: auto;
-    
+
+.modalmask:target{
+        opacity: 1;
+        pointer-events: auto;
 }
 
 .modalbox{
+    margin: 0 auto;
+    width: 75%;
     position: relative; 
-    max-width: 800px; 
+    max-width: 900px; 
     border: solid black;
     padding: 3px;
     background: $CardColor;
 //  border-radius:3px;
-    transition: all 500ms ease-in;
-    z-index: 99999;
+//    transition: all 500ms ease-in;
     -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.resize {
-    margin: 6% auto;
-    width: 0;
-    height: 0;
-}
-
-.modalmask:target .resize{
-    width:100%;
-//    max-width:850px;
-    height:auto;
+@media screen and (max-device-width : 600px) {
+    .modalbox {
+        width: 100%;
+    }
 }
 
 .close {
@@ -103,57 +102,9 @@
   width: 100%;
 }
 
-.btnDeploy{
-    text-decoration: none;
-    padding: 0px;
-    font-family: arial;
-    text-transform: uppercase;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-weight: 800;
-    font-size: 25px;
-    color: black;
-    background-color: #9b0e0e;
-    margin: auto; 
-    display: block;
-    text-align: center;
-    margin: 15px 0px 5px 0px;
-    border-radius: 999px;
-  }
 
-.btnDeploy:hover, .gitIcon:hover {
-color: #9b0e0e;
-background-color: #bc6355;
-text-decoration: none;
-}
 
-.gitIcon {
-  margin-right: 15px;
-  float: Right;
-  box-shadow: inset 3px 3px 3px rgba(255, 255, 255, 0.7), inset -2px -2px 3px rgba(0, 0, 0, 0.1), 2px 2px 10px rgba(0, 0, 0, 0.1);
-  width: 33px;
-  /* Ancho del bot├│n */
-  border: 1px solid #9b9bff;
-  /* Borde */
-  background: white;
-  /* Fondo */
-  text-align: center;
-  /* Alineaci├│n del texto */
-  text-shadow: -1px -1px rgba(0, 0, 0, 0.2);
-  /* Sombra del texto */
-  border-radius: 5px;
-  /* Bordes redondos */
-  color: black;
-  /* Color del texto */
-}
 
-.gitIcon:active, .btnDeploy:active {
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
-  /* text-shadow */
-  background: #e2e2e2;
-  /* background color more dark than original */
-  box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.3), inset -3px -3px 3px rgba(255, 255, 255, 0.2); 
-}
 
 #specialMessage {
     width: 100%;
@@ -166,8 +117,8 @@ text-decoration: none;
     z-index: 99999;
 }
 
-@media screen and (max-device-width : 600px) {
-    #specialMessage {
-        display: block;
-    }
-}
+// @media screen and (max-device-width : 600px) {
+//     #specialMessage {
+//         display: block;
+//     }
+// }

@@ -46,9 +46,9 @@ var init = function(){
     var increment = parseInt(event.currentTarget.getAttribute('data-increment'));
     theta += ( 360 / panelCount ) * increment; 
     carousel.style.transform = 'translateZ(-' + r + 'px) rotateY(' + theta + 'deg)';
-    console.log("r: ", r)
-    console.log("theta: ", theta)
-    console.log("panelCount: ", panelCount)
+    console.log("r: ", r);
+    console.log("theta: ", theta);
+    console.log("panelCount: ", panelCount);
   };
 
   //Triggers
@@ -135,7 +135,7 @@ var init = function(){
                   "<div class='left-plane'></div>" +
                   "<div class='right-plane'></div>" +
                 "</div>" +  
-                "<div class='text'>Open</div>" +
+                "<div class='text'><a href='#modal'>Open</a></div>" +
             "</div>" +
         "</article>";
         // "</a>"
@@ -152,7 +152,7 @@ var init = function(){
         "</footer>";
 
       let modalWindow = "<div id='modalM'>" +
-        "<a href='#close' title='Close' class='close'>X</a>" +
+        "<a href='#' title='Close' class='close'>X</a>" +
         "<h1 class='strokeM'>" + projectsInfo[i]['title'] + "</h1>" +
         "<div class='jcarousel-wrapper'>" +
           "<div class='jcarousel'>" +

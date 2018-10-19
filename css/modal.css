@@ -1,152 +1,72 @@
-@charset "UTF-8";
-.modalmask {
-  position: fixed;
-  font-family: Arial, sans-serif;
-  top: 35px;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 99998;
-  opacity: 0;
-  transition: opacity 400ms ease-in;
-  pointer-events: none; }
+/*
+Error: Undefined variable: "$CardColor".
+        on line 32 of sass/modal.scss
 
-.modalmask:target {
-  opacity: 1;
-  pointer-events: auto; }
+27:     width: 75%;
+28:     position: relative; 
+29:     max-width: 900px; 
+30:     border: solid black;
+31:     padding: 3px;
+32:     background: $CardColor;
+33: //  border-radius:3px;
+34: //    transition: all 500ms ease-in;
+35:     -webkit-box-sizing: border-box;
+36:      -moz-box-sizing: border-box;
+37:           box-sizing: border-box;
 
-.modalbox {
-  position: relative;
-  max-width: 800px;
-  border: solid black;
-  padding: 3px;
-  background: rgba(97, 26, 38, 0.8);
-  transition: all 500ms ease-in;
-  z-index: 99999;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-.resize {
-  margin: 6% auto;
-  width: 0;
-  height: 0; }
-
-.modalmask:target .resize {
-  width: 100%;
-  height: auto; }
-
-.close {
-  background: #606061;
-  color: #FFFFFF;
-  line-height: 25px;
-  position: absolute;
-  right: 1px;
-  text-align: center;
-  top: 1px;
-  width: 24px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 3px; }
-
-.close:hover {
-  background: #FAAC58;
-  color: #222; }
-
-.strokeM {
-  text-align: center;
-  color: pink;
-  font-family: georgia;
-  font-size: 38px;
-  letter-spacing: 1px;
-  text-shadow: -2px -2px 0px #cc0000, 2px -2px 0px #cc0000, -2px 2px 0px #cc0000, 2px 2px 0px #cc0000; }
-
-.descriptionM {
-  font: 16px monospace, sans-serif;
-  clear: left;
-  text-indent: 20px;
-  text-align: justify;
-  line-height: 1.25;
-  background-color: black;
-  overflow: hidden;
-  color: #00FF00;
-  padding: 5px; }
-
-.labelM {
-  font: 17px monospace, sans-serif;
-  text-indent: 20px;
-  line-height: 1.25;
-  background-color: black;
-  color: #00FF00;
-  padding: 5px;
-  width: 70%;
-  display: inline;
-  float: left;
-  margin: 0px 0px 15px 0px; }
-
-.rowM {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  width: 100%; }
-
-.btnDeploy {
-  text-decoration: none;
-  padding: 0px;
-  font-family: arial;
-  text-transform: uppercase;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-weight: 800;
-  font-size: 25px;
-  color: black;
-  background-color: #9b0e0e;
-  margin: auto;
-  display: block;
-  text-align: center;
-  margin: 15px 0px 5px 0px;
-  border-radius: 999px; }
-
-.btnDeploy:hover, .gitIcon:hover {
-  color: #9b0e0e;
-  background-color: #bc6355;
-  text-decoration: none; }
-
-.gitIcon {
-  margin-right: 15px;
-  float: Right;
-  box-shadow: inset 3px 3px 3px rgba(255, 255, 255, 0.7), inset -2px -2px 3px rgba(0, 0, 0, 0.1), 2px 2px 10px rgba(0, 0, 0, 0.1);
-  width: 33px;
-  /* Ancho del botÔö£Ôöén */
-  border: 1px solid #9b9bff;
-  /* Borde */
-  background: white;
-  /* Fondo */
-  text-align: center;
-  /* AlineaciÔö£Ôöén del texto */
-  text-shadow: -1px -1px rgba(0, 0, 0, 0.2);
-  /* Sombra del texto */
-  border-radius: 5px;
-  /* Bordes redondos */
-  color: black;
-  /* Color del texto */ }
-
-.gitIcon:active, .btnDeploy:active {
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
-  /* text-shadow */
-  background: #e2e2e2;
-  /* background color more dark than original */
-  box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.3), inset -3px -3px 3px rgba(255, 255, 255, 0.2); }
-
-#specialMessage {
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  color: black;
-  font-size: 15px;
-  display: none;
-  position: fixed;
-  z-index: 99999; }
-
-@media screen and (max-device-width: 600px) {
-  #specialMessage {
-    display: block; } }
+Backtrace:
+sass/modal.scss:32
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:320:in `block in watch'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$CardColor\".\A         on line 32 of sass/modal.scss\A \A 27:     width: 75%;\A 28:     position: relative; \A 29:     max-width: 900px; \A 30:     border: solid black;\A 31:     padding: 3px;\A 32:     background: $CardColor;\A 33: //  border-radius:3px;\A 34: //    transition: all 500ms ease-in;\A 35:     -webkit-box-sizing: border-box;\A 36:      -moz-box-sizing: border-box;\A 37:           box-sizing: border-box;"; }
