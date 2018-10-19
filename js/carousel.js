@@ -151,29 +151,41 @@ var init = function(){
         "</div>" +
         "</footer>";
 
-      let modalWindow = "<div id='modalM'>" +
-        "<a href='#' title='Close' class='close'>X</a>" +
-        "<h1 class='strokeM'>" + projectsInfo[i]['title'] + "</h1>" +
-        "<div class='jcarousel-wrapper'>" +
-          "<div class='jcarousel'>" +
-              "<ul>" +
-                  "<li><img src='img/" + projectsInfo[i]["img"][0] + "'  alt=''></li>" +
-                  "<li><img src='img/" + projectsInfo[i]["img"][1] + "'  alt=''></li>" +
-                  "<li><img src='img/" + projectsInfo[i]["img"][2] + "'  alt=''></li>" +
-              "</ul>" +
+      let modalWindow = 
+        "<header>" +
+          "<div class='x-mark'>" +
+            "<a href='#'>" + 
+            "<div class='container-mark'>" +
+              "<div class='left'></div>" +
+              "<div class='right'></div>" +
+            "</div>" +
+            "</a>" +
           "</div>" +
-          "<a href='#' class='jcarousel-control-prev'>&lsaquo;</a>" +
-          "<a href='#' class='jcarousel-control-next'>&rsaquo;</a>" +
-        "</div>" +
-        "<div class='rowM'>" + 
-          "<p class='labelM'>" + projectsInfo[i]['category'] + "</p>" +
-          "<a href='" + projectsInfo[i]['github'] + "' target='_blank'>" + 
-            "<span class='gitIcon'><i class='fab fa-github-square fa-2x'></i></span>" +
-          "</a>" +
-        "</div>" +
-        "<p class='descriptionM'>" + projectsInfo[i]['description'] + "</p>" +
-        "<a href='" + projectsInfo[i]['deploy'] + "' class='btnDeploy' target='_blank'>Deploy</a>" +
-      "</div>";
+          "<h1 class='strokeM'>" + projectsInfo[i].title + "</h1>" +
+        "</header>" +
+        "<section>" +
+          "<div class='jcarousel-wrapper'>" +
+            "<div class='jcarousel'>" +
+                "<ul>" +
+                    "<li><img src='img/" + projectsInfo[i].img[0] + "'  alt=''></li>" +
+                    "<li><img src='img/" + projectsInfo[i].img[1] + "'  alt=''></li>" +
+                    "<li><img src='img/" + projectsInfo[i].img[2] + "'  alt=''></li>" +
+                "</ul>" +
+            "</div>" +
+            "<a href='#' class='jcarousel-control-prev'>&lsaquo;</a>" +
+            "<a href='#' class='jcarousel-control-next'>&rsaquo;</a>" +
+          "</div>" +
+          "<div class='rowM'>" + 
+            "<p class='labelM'>" + projectsInfo[i].category + "</p>" +
+            "<a href='" + projectsInfo[i].github + "' target='_blank'>" + 
+              "<span class='gitIcon'><i class='fab fa-github-square fa-2x'></i></span>" +
+            "</a>" +
+          "</div>" +
+        "</section>" +
+          "<p class='descriptionM'>" + projectsInfo[i].description + "</p>" +
+        "<footer>" + 
+          "<a href='" + projectsInfo[i].deploy + "' class='btnDeploy' target='_blank'>Deploy</a>" +
+        "</footer>";
 
         
       

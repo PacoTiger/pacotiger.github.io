@@ -17,6 +17,9 @@ h1 {
   h1 {
     font-size: 40px;
     line-height: 52px; } }
+.opa0 {
+  opacity: 0; }
+
 .hidde {
   display: none; }
 
