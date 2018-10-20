@@ -38,9 +38,14 @@ request.onload = function() {
       }
     }
 
-    hiddeGithubIcon () {
+    hiddeGithubBttn () {
         var re = /class='gitIcon'/gi;
         var addHidde = "class='gitIcon hidde'";
+        this.modalWindow = $(this)[0].modalWindow.replace(re, addHidde);
+      }
+    hiddeDeployBttn () {
+        var re = /class='btnDeploy'/gi;
+        var addHidde = "class='btnDeploy hidde'";
         this.modalWindow = $(this)[0].modalWindow.replace(re, addHidde);
       }
   }
@@ -135,9 +140,13 @@ request.onload = function() {
     //card_X.addIconTechnologies()
     eval("card_" + projectsInfo[i]['id'] + ".addIconTechnologies(i);");
 
-    //Hidde the Github btn if there isn't github link.
-    if (projectsInfo[i]['github'] == "") {
-      eval("card_" + projectsInfo[i]['id'] + ".hiddeGithubIcon();");
+    //Hidde the Github bttn if there isn't github link.
+    if (projectsInfo[i].github == "") {
+      eval("card_" + projectsInfo[i].id + ".hiddeGithubBttn();");
+    }
+    //Hidde the Deploy bttn if there isn't deploy link.
+    if (projectsInfo[i].deploy == "") {
+      eval("card_" + projectsInfo[i].id + ".hiddeDeployBttn();");
     }
   } //close for
   init(projectsInfo.length, cards);
@@ -148,7 +157,7 @@ var init = function(projectsN, cards){
   navButtons   = document.querySelectorAll('figure'),
   panelCount   = projectsN,//carousel.children.length,
   theta        = 0,
-  panelWitdh   = 210,
+  panelWitdh   = 222,
   r            = (panelWitdh/2)/Math.tan(((360/2)/panelCount)*Math.PI/180);
 
   var onNavButtonClick = function (event){
