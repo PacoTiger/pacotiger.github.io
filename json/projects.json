@@ -96,6 +96,70 @@
 							}
 
 						]
+	},
+	{
+		"id": "3",
+		"title": "Comparison",
+		"category": "Project",
+		"description": "Energy price comparison web to get a quote and even switch your electric supplier. Backend made with PHP",
+		"github": "",
+		"deploy": "https://www.smarter-power.co.uk/",
+		"img": ["comparison/Intro.jpg", "comparison/MeterDetails.jpg", "comparison/Step1.jpg"],
+		"technologies": [ 
+							{
+								"name" : "JavaScript",
+								"icon": "icons/js.svg"							 	
+							},
+							{
+								"name" : "CSS3",
+								"icon" : "icons/css3.svg"
+							},
+							{
+								"name" : "PHP",
+								"icon" : "icons/php.svg"
+							},
+							{
+								"name" : "Laravel",
+								"icon" : "icons/laravel.svg"
+							},
+							{
+								"name" : "MySQL",
+								"icon" : "icons/mysql.svg"
+							}
+
+						]
+	},
+	{
+		"id": "4",
+		"title": "Comparison",
+		"category": "Project",
+		"description": "Energy price comparison web to get a quote and even switch your electric supplier. Backend made with PHP",
+		"github": "",
+		"deploy": "https://www.smarter-power.co.uk/",
+		"img": ["comparison/Intro.jpg", "comparison/MeterDetails.jpg", "comparison/Step1.jpg"],
+		"technologies": [ 
+							{
+								"name" : "JavaScript",
+								"icon": "icons/js.svg"							 	
+							},
+							{
+								"name" : "CSS3",
+								"icon" : "icons/css3.svg"
+							},
+							{
+								"name" : "PHP",
+								"icon" : "icons/php.svg"
+							},
+							{
+								"name" : "Laravel",
+								"icon" : "icons/laravel.svg"
+							},
+							{
+								"name" : "MySQL",
+								"icon" : "icons/mysql.svg"
+							}
+
+						]
 	}
 	
 ]

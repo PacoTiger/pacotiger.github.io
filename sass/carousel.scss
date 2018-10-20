@@ -114,20 +114,31 @@
 
 
 #carousel figure:nth-child(1) {
-  -webkit-transform: rotateY(   0deg ) translateZ( 100px );
-     -moz-transform: rotateY(   0deg ) translateZ( 100px );
-          transform: rotateY(   0deg ) translateZ( 100px );
+  -webkit-transform: rotateY(   0deg ) translateZ( 188px );
+     -moz-transform: rotateY(   0deg ) translateZ( 188px );
+          transform: rotateY(   0deg ) translateZ( 188px );
 }
 #carousel figure:nth-child(2) {
-  -webkit-transform: rotateY(  120deg ) translateZ( 100px );
-     -moz-transform: rotateY(  120deg ) translateZ( 100px );
-          transform: rotateY(  120deg ) translateZ( 100px );
+  -webkit-transform: rotateY(  72deg ) translateZ( 188px );
+     -moz-transform: rotateY(  72deg ) translateZ( 188px );
+          transform: rotateY(  72deg ) translateZ( 188px );
 }
 #carousel figure:nth-child(3) {
-  -webkit-transform: rotateY(  240deg ) translateZ( 100px );
-     -moz-transform: rotateY(  240deg ) translateZ( 100px );
-          transform: rotateY(  240deg ) translateZ( 100px );
+  -webkit-transform: rotateY(  144deg ) translateZ( 188px );
+     -moz-transform: rotateY(  144deg ) translateZ( 188px );
+          transform: rotateY(  144deg ) translateZ( 188px );
 }
+#carousel figure:nth-child(4) {
+  -webkit-transform: rotateY(  216deg ) translateZ( 188px );
+     -moz-transform: rotateY(  216deg ) translateZ( 188px );
+          transform: rotateY(  216deg ) translateZ( 188px );
+}
+#carousel figure:nth-child(5) {
+  -webkit-transform: rotateY(  288deg ) translateZ( 188px );
+     -moz-transform: rotateY(  288deg ) translateZ( 188px );
+          transform: rotateY(  288deg ) translateZ( 188px );
+}
+
 
 
  
