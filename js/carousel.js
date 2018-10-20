@@ -20,7 +20,7 @@ request.onload = function() {
     }
 
     render() {
-      $('#carousel').append("<figure id='" + this.modal + "' class='card'>" + this.header + this.body + this.footer + "</figure>");
+      $('#carousel').append("<figure id='" + this.modal + "'class='card' data-increment='1'>" + this.header + this.body + this.footer + "</figure>");
     }
 
     showModal() {
@@ -145,7 +145,7 @@ request.onload = function() {
 
 var init = function(projectsN, cards){
   var carousel = document.getElementById('carousel'),
-  navButtons   = document.querySelectorAll('#navigation span'),
+  navButtons   = document.querySelectorAll('figure'),
   panelCount   = projectsN,//carousel.children.length,
   theta        = 0,
   panelWitdh   = 210,
@@ -161,7 +161,7 @@ var init = function(projectsN, cards){
   };
 
   //Triggers
-  for (var i=0; i < 2; i++) {
+  for (var i=0; i < projectsN; i++) {
     navButtons[i].addEventListener( 'click', onNavButtonClick, false);
   }
 
