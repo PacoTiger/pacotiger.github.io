@@ -5,7 +5,7 @@
 		"category": "Proof of Concept",
 		"description": "My first single page application developed on AngularJS (1.X). It searches music bands really fast (instantaneous). Structured data storage using a JSON file as support.",
 		"github": "https://github.com/PacoTiger/bandsApp/",
-		"deploy": "",
+		"deploy": "https://pacotiger.github.io/bandsApp/",
 		"img": ["img_fjords.jpg", "img_forest.jpg", "responsive.png"],
 		"technologies": [ 
 							{
@@ -99,11 +99,11 @@
 	},
 	{
 		"id": "3",
-		"title": "Comparison",
+		"title": "DNI Detector",
 		"category": "Project",
-		"description": "Energy price comparison web to get a quote and even switch your electric supplier. Backend made with PHP",
-		"github": "",
-		"deploy": "https://www.smarter-power.co.uk/",
+		"description": "All spanish IDs (DNI) have eight numbers and one letter. Thanks to this App you can know the letter of any spanish ID if you know the numbers.",
+		"github": "https://github.com/PacoTiger/id-spanish-letter-detector",
+		"deploy": "https://pacotiger.github.io/id-spanish-letter-detector/",
 		"img": ["comparison/Intro.jpg", "comparison/MeterDetails.jpg", "comparison/Step1.jpg"],
 		"technologies": [ 
 							{
@@ -115,18 +115,9 @@
 								"icon" : "icons/css3.svg"
 							},
 							{
-								"name" : "PHP",
-								"icon" : "icons/php.svg"
-							},
-							{
-								"name" : "Laravel",
-								"icon" : "icons/laravel.svg"
-							},
-							{
-								"name" : "MySQL",
-								"icon" : "icons/mysql.svg"
+								"name" : "HTML5",
+								"icon" : "icons/html5.svg"
 							}
-
 						]
 	},
 	{
