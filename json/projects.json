@@ -122,11 +122,38 @@
 	},
 	{
 		"id": "4",
-		"title": "Comparison",
-		"category": "Project",
-		"description": "Energy price comparison web to get a quote and even switch your electric supplier. Backend made with PHP",
-		"github": "",
-		"deploy": "https://www.smarter-power.co.uk/",
+		"title": "Pizza Builder",
+		"category": "Challenge",
+		"description": "Challenge with CSS and Javascript. Make your own virtual yummy pizza and be aware about how the price is going up!",
+		"github": "https://github.com/PacoTiger/Pizza-Builder",
+		"deploy": "https://pacotiger.github.io/Pizza-Builder/",
+		"img": ["pizza-builder/1.png", "pizza-builder/2.png", "digitalart.jpg"],
+		"technologies": [ 
+							{
+								"name" : "JavaScript",
+								"icon": "icons/js.svg"							 	
+							},
+							{
+								"name" : "CSS3",
+								"icon" : "icons/css3.svg"
+							},
+							{
+								"name" : "HTML5",
+								"icon" : "icons/html5.svg"
+							},
+							{
+								"name" : "jQuery",
+								"icon" : "icons/jquery.svg"
+							}
+						]
+	},
+	{
+		"id": "5",
+		"title": "Pokemon API",
+		"category": "Proof of Concept",
+		"description": "Challenge with CSS and Javascript. Make your own virtual yummy pizza and be aware about how the price is going up!",
+		"github": "https://github.com/PacoTiger/pokeAPI",
+		"deploy": "https://pacotiger.github.io/pokeAPI/",
 		"img": ["comparison/Intro.jpg", "comparison/MeterDetails.jpg", "comparison/Step1.jpg"],
 		"technologies": [ 
 							{
@@ -138,19 +165,118 @@
 								"icon" : "icons/css3.svg"
 							},
 							{
-								"name" : "PHP",
-								"icon" : "icons/php.svg"
+								"name" : "HTML5",
+								"icon" : "icons/html5.svg"
 							},
 							{
-								"name" : "Laravel",
-								"icon" : "icons/laravel.svg"
+								"name" : "jQuery",
+								"icon" : "icons/jquery.svg"
 							},
 							{
-								"name" : "MySQL",
-								"icon" : "icons/mysql.svg"
+								"name" : "API",
+								"icon" : "icons/bosun.svg"
+							},
+							{
+								"name" : "Skeleton CSS",
+								"icon" : "icons/bootstrap.svg"
 							}
-
 						]
-	}
-	
+	},
+	{
+		"id": "6",
+		"title": "AED Report",
+		"category": "Project",
+		"description": "Daily report about the stats of staff in AED (Active Energy Direct LTD UK). App for private purposes.",
+		"github": "",
+		"deploy": "",
+		"img": ["comparison/Intro.jpg", "comparison/MeterDetails.jpg", "comparison/Step1.jpg"],
+		"technologies": [ 
+							{
+								"name" : "JavaScript",
+								"icon": "icons/js.svg"							 	
+							},
+							{
+								"name" : "CSS3",
+								"icon" : "icons/css3.svg"
+							},
+							{
+								"name" : "HTML5",
+								"icon" : "icons/html5.svg"
+							},
+							{
+								"name" : "jQuery",
+								"icon" : "icons/jquery.svg"
+							},
+							{
+								"name" : "API",
+								"icon" : "icons/bosun.svg"
+							},
+							{
+								"name" : "Skeleton CSS",
+								"icon" : "icons/bootstrap.svg"
+							}
+						]
+	},
+	{
+		"id": "7",
+		"title": "BlaBlaBus",
+		"category": "Project",
+		"description": "Crazy unfinished project, where you could find plenty of private bus routes and reserve a seat.",
+		"github": "",
+		"deploy": "",
+		"img": ["comparison/Intro.jpg", "comparison/MeterDetails.jpg", "comparison/Step1.jpg"],
+		"technologies": [ 
+							{
+								"name" : "JavaScript",
+								"icon": "icons/js.svg"							 	
+							},
+							{
+								"name" : "CSS3",
+								"icon" : "icons/css3.svg"
+							},
+							{
+								"name" : "HTML5",
+								"icon" : "icons/html5.svg"
+							},
+							{
+								"name" : "jQuery",
+								"icon" : "icons/jquery.svg"
+							},
+							{
+								"name" : "AngularJS",
+								"icon" : "icons/angular.svg"
+							}
+						]
+	},
+	{
+		"id": "8",
+		"title": "Responsive Emails",
+		"category": "Project",
+		"description": "Crazy unfinished project, where you could find plenty of private bus routes and reserve a seat.",
+		"github": "",
+		"deploy": "",
+		"img": ["comparison/Intro.jpg", "comparison/MeterDetails.jpg", "comparison/Step1.jpg"],
+		"technologies": [ 
+							{
+								"name" : "JavaScript",
+								"icon": "icons/js.svg"							 	
+							},
+							{
+								"name" : "CSS3",
+								"icon" : "icons/css3.svg"
+							},
+							{
+								"name" : "HTML5",
+								"icon" : "icons/html5.svg"
+							},
+							{
+								"name" : "jQuery",
+								"icon" : "icons/jquery.svg"
+							},
+							{
+								"name" : "AngularJS",
+								"icon" : "icons/angular.svg"
+							}
+						]
+	}	
 ]
