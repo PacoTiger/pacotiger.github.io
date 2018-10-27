@@ -6,7 +6,7 @@
 		"description": "My first single page application developed on AngularJS (1.X). It searches music bands really fast (instantaneous). Structured data storage using a JSON file as support.",
 		"github": "https://github.com/PacoTiger/bandsApp/",
 		"deploy": "https://pacotiger.github.io/bandsApp/",
-		"img": ["img_fjords.jpg", "img_forest.jpg", "responsive.png"],
+		"img": ["BandsApp/1.png", "BandsApp/2.png", "BandsApp/3.png"],
 		"technologies": [ 
 							{
 								"name" : "JavaScript",
