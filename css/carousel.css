@@ -11,8 +11,8 @@ Error: Undefined variable: "$wCard".
 31:   height: $hCard;
 32:   min-width: $minWCard;
 33:   min-height: $minHCard;
-34:     header, article, footer {
-35:       background: $CardColor;
+34:   max-width: 350px;
+35:   max-height: 260px;
 
 Backtrace:
 sass/carousel.scss:30
@@ -69,4 +69,4 @@ C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$wCard\".\A         on line 30 of sass/carousel.scss\A \A 25: #carousel figure {\A 26:   position: absolute;\A 27:   display: flex;\A 28:   flex-direction:column;\A 29:   margin: 0 auto;\A 30:   width: $wCard;\A 31:   height: $hCard;\A 32:   min-width: $minWCard;\A 33:   min-height: $minHCard;\A 34:     header, article, footer {\A 35:       background: $CardColor;"; }
+  content: "Error: Undefined variable: \"$wCard\".\A         on line 30 of sass/carousel.scss\A \A 25: #carousel figure {\A 26:   position: absolute;\A 27:   display: flex;\A 28:   flex-direction:column;\A 29:   margin: 0 auto;\A 30:   width: $wCard;\A 31:   height: $hCard;\A 32:   min-width: $minWCard;\A 33:   min-height: $minHCard;\A 34:   max-width: 350px;\A 35:   max-height: 260px;"; }

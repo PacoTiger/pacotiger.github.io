@@ -6,7 +6,7 @@
 		"description": "My first single page application developed on AngularJS (1.X). It searches music bands really fast (instantaneous). Structured data storage using a JSON file as support.",
 		"github": "https://github.com/PacoTiger/bandsApp/",
 		"deploy": "https://pacotiger.github.io/bandsApp/",
-		"img": ["BandsApp/1.png", "BandsApp/2.png", "BandsApp/3.png"],
+		"img": ["BandsApp/1.png", "BandsApp/th.png", "BandsApp/3.png"],
 		"technologies": [ 
 							{
 								"name" : "JavaScript",
@@ -41,7 +41,7 @@
 		"description": "Grab thousands of quotes through a remote public API to share on Twitter. This is ideal for gaining inspirational insights to share with your followers and more. For this design, I´ve used Bulma CSS Framework.",
 		"github": "https://github.com/PacoTiger/quoteMachine",
 		"deploy": "https://pacotiger.github.io/quoteMachine/",
-		"img": ["img_fjords.jpg", "img_forest.jpg", "responsive.png"],
+		"img": ["quotemachine/1.png", "quotemachine/2.png", "quotemachine/responsive.png"],
 		"technologies": [ 
 							{
 								"name" : "JavaScript",
@@ -104,7 +104,7 @@
 		"description": "All spanish IDs (DNI) have eight numbers and one letter. Thanks to this App you can know the letter of any spanish ID if you know the numbers.",
 		"github": "https://github.com/PacoTiger/id-spanish-letter-detector",
 		"deploy": "https://pacotiger.github.io/id-spanish-letter-detector/",
-		"img": ["comparison/Intro.jpg", "comparison/MeterDetails.jpg", "comparison/Step1.jpg"],
+		"img": ["dni/1.png", "dni/2.png", "dni/3.png"],
 		"technologies": [ 
 							{
 								"name" : "JavaScript",
@@ -151,10 +151,10 @@
 		"id": "5",
 		"title": "Pokemon API",
 		"category": "Proof of Concept",
-		"description": "Challenge with CSS and Javascript. Make your own virtual yummy pizza and be aware about how the price is going up!",
+		"description": "Make requests from a API external server, and display the data in a css grid.",
 		"github": "https://github.com/PacoTiger/pokeAPI",
 		"deploy": "https://pacotiger.github.io/pokeAPI/",
-		"img": ["comparison/Intro.jpg", "comparison/MeterDetails.jpg", "comparison/Step1.jpg"],
+		"img": ["pokeapi/0.png", "pokeapi/1.png", "pokeapi/2.png"],
 		"technologies": [ 
 							{
 								"name" : "JavaScript",

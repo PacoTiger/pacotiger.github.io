@@ -55,9 +55,11 @@ a, a:visited, a:link {
   flex-direction: column;
   margin: 0 auto;
   width: 35vh;
-  height: 35vh;
+  height: 25vh;
   min-width: 222px;
-  min-height: 222px; }
+  min-height: 222px;
+  max-width: 350px;
+  max-height: 260px; }
   #carousel figure header, #carousel figure article, #carousel figure footer {
     background: #416EC0;
     opacity: 0.9;
@@ -87,11 +89,10 @@ a, a:visited, a:link {
       text-align: left;
       line-height: 0.95;
       position: absolute;
-      top: 50%;
-      left: 50%;
-      height: 94%;
-      width: 94%;
-      margin: -37% 0 0 -47%;
+      margin: 5px;
+      padding: 5px;
+      bottom: 0px;
+      top: 0px;
       border: 1px solid #000000;
       background-color: black;
       border-radius: 5px; }
@@ -127,49 +128,49 @@ a, a:visited, a:link {
   transition: 0.3s; }
 
 #carousel figure:nth-child(1) {
-  -webkit-transform: rotateY(0deg) translateZ(333px);
-  -moz-transform: rotateY(0deg) translateZ(333px);
-  transform: rotateY(0deg) translateZ(333px); }
+  -webkit-transform: rotateY(0deg) translateZ(525px);
+  -moz-transform: rotateY(0deg) translateZ(525px);
+  transform: rotateY(0deg) translateZ(525px); }
 
 #carousel figure:nth-child(2) {
-  -webkit-transform: rotateY(40deg) translateZ(333px);
-  -moz-transform: rotateY(40deg) translateZ(333px);
-  transform: rotateY(40deg) translateZ(333px); }
+  -webkit-transform: rotateY(40deg) translateZ(525px);
+  -moz-transform: rotateY(40deg) translateZ(525px);
+  transform: rotateY(40deg) translateZ(525px); }
 
 #carousel figure:nth-child(3) {
-  -webkit-transform: rotateY(80deg) translateZ(333px);
-  -moz-transform: rotateY(80deg) translateZ(333px);
-  transform: rotateY(80deg) translateZ(333px); }
+  -webkit-transform: rotateY(80deg) translateZ(525px);
+  -moz-transform: rotateY(80deg) translateZ(525px);
+  transform: rotateY(80deg) translateZ(525px); }
 
 #carousel figure:nth-child(4) {
-  -webkit-transform: rotateY(120deg) translateZ(333px);
-  -moz-transform: rotateY(120deg) translateZ(333px);
-  transform: rotateY(120deg) translateZ(333px); }
+  -webkit-transform: rotateY(120deg) translateZ(525px);
+  -moz-transform: rotateY(120deg) translateZ(525px);
+  transform: rotateY(120deg) translateZ(525px); }
 
 #carousel figure:nth-child(5) {
-  -webkit-transform: rotateY(160deg) translateZ(333px);
-  -moz-transform: rotateY(160deg) translateZ(333px);
-  transform: rotateY(160deg) translateZ(333px); }
+  -webkit-transform: rotateY(160deg) translateZ(525px);
+  -moz-transform: rotateY(160deg) translateZ(525px);
+  transform: rotateY(160deg) translateZ(525px); }
 
 #carousel figure:nth-child(6) {
-  -webkit-transform: rotateY(200deg) translateZ(333px);
-  -moz-transform: rotateY(200deg) translateZ(333px);
-  transform: rotateY(200deg) translateZ(333px); }
+  -webkit-transform: rotateY(200deg) translateZ(525px);
+  -moz-transform: rotateY(200deg) translateZ(525px);
+  transform: rotateY(200deg) translateZ(525px); }
 
 #carousel figure:nth-child(7) {
-  -webkit-transform: rotateY(240deg) translateZ(333px);
-  -moz-transform: rotateY(240deg) translateZ(333px);
-  transform: rotateY(240deg) translateZ(333px); }
+  -webkit-transform: rotateY(240deg) translateZ(525px);
+  -moz-transform: rotateY(240deg) translateZ(525px);
+  transform: rotateY(240deg) translateZ(525px); }
 
 #carousel figure:nth-child(8) {
-  -webkit-transform: rotateY(280deg) translateZ(333px);
-  -moz-transform: rotateY(280deg) translateZ(333px);
-  transform: rotateY(280deg) translateZ(333px); }
+  -webkit-transform: rotateY(280deg) translateZ(525px);
+  -moz-transform: rotateY(280deg) translateZ(525px);
+  transform: rotateY(280deg) translateZ(525px); }
 
 #carousel figure:nth-child(9) {
-  -webkit-transform: rotateY(320deg) translateZ(333px);
-  -moz-transform: rotateY(320deg) translateZ(333px);
-  transform: rotateY(320deg) translateZ(333px); }
+  -webkit-transform: rotateY(320deg) translateZ(525px);
+  -moz-transform: rotateY(320deg) translateZ(525px);
+  transform: rotateY(320deg) translateZ(525px); }
 
 .modalmask {
   position: fixed;
@@ -520,9 +521,11 @@ h1 {
   flex-direction: column;
   margin: 0 auto;
   width: 35vh;
-  height: 35vh;
+  height: 25vh;
   min-width: 222px;
-  min-height: 222px; }
+  min-height: 222px;
+  max-width: 350px;
+  max-height: 260px; }
   #carousel figure header, #carousel figure article, #carousel figure footer {
     background: #416EC0;
     opacity: 0.9;
@@ -552,11 +555,10 @@ h1 {
       text-align: left;
       line-height: 0.95;
       position: absolute;
-      top: 50%;
-      left: 50%;
-      height: 94%;
-      width: 94%;
-      margin: -37% 0 0 -47%;
+      margin: 5px;
+      padding: 5px;
+      bottom: 0px;
+      top: 0px;
       border: 1px solid #000000;
       background-color: black;
       border-radius: 5px; }
@@ -592,49 +594,49 @@ h1 {
   transition: 0.3s; }
 
 #carousel figure:nth-child(1) {
-  -webkit-transform: rotateY(0deg) translateZ(333px);
-  -moz-transform: rotateY(0deg) translateZ(333px);
-  transform: rotateY(0deg) translateZ(333px); }
+  -webkit-transform: rotateY(0deg) translateZ(525px);
+  -moz-transform: rotateY(0deg) translateZ(525px);
+  transform: rotateY(0deg) translateZ(525px); }
 
 #carousel figure:nth-child(2) {
-  -webkit-transform: rotateY(40deg) translateZ(333px);
-  -moz-transform: rotateY(40deg) translateZ(333px);
-  transform: rotateY(40deg) translateZ(333px); }
+  -webkit-transform: rotateY(40deg) translateZ(525px);
+  -moz-transform: rotateY(40deg) translateZ(525px);
+  transform: rotateY(40deg) translateZ(525px); }
 
 #carousel figure:nth-child(3) {
-  -webkit-transform: rotateY(80deg) translateZ(333px);
-  -moz-transform: rotateY(80deg) translateZ(333px);
-  transform: rotateY(80deg) translateZ(333px); }
+  -webkit-transform: rotateY(80deg) translateZ(525px);
+  -moz-transform: rotateY(80deg) translateZ(525px);
+  transform: rotateY(80deg) translateZ(525px); }
 
 #carousel figure:nth-child(4) {
-  -webkit-transform: rotateY(120deg) translateZ(333px);
-  -moz-transform: rotateY(120deg) translateZ(333px);
-  transform: rotateY(120deg) translateZ(333px); }
+  -webkit-transform: rotateY(120deg) translateZ(525px);
+  -moz-transform: rotateY(120deg) translateZ(525px);
+  transform: rotateY(120deg) translateZ(525px); }
 
 #carousel figure:nth-child(5) {
-  -webkit-transform: rotateY(160deg) translateZ(333px);
-  -moz-transform: rotateY(160deg) translateZ(333px);
-  transform: rotateY(160deg) translateZ(333px); }
+  -webkit-transform: rotateY(160deg) translateZ(525px);
+  -moz-transform: rotateY(160deg) translateZ(525px);
+  transform: rotateY(160deg) translateZ(525px); }
 
 #carousel figure:nth-child(6) {
-  -webkit-transform: rotateY(200deg) translateZ(333px);
-  -moz-transform: rotateY(200deg) translateZ(333px);
-  transform: rotateY(200deg) translateZ(333px); }
+  -webkit-transform: rotateY(200deg) translateZ(525px);
+  -moz-transform: rotateY(200deg) translateZ(525px);
+  transform: rotateY(200deg) translateZ(525px); }
 
 #carousel figure:nth-child(7) {
-  -webkit-transform: rotateY(240deg) translateZ(333px);
-  -moz-transform: rotateY(240deg) translateZ(333px);
-  transform: rotateY(240deg) translateZ(333px); }
+  -webkit-transform: rotateY(240deg) translateZ(525px);
+  -moz-transform: rotateY(240deg) translateZ(525px);
+  transform: rotateY(240deg) translateZ(525px); }
 
 #carousel figure:nth-child(8) {
-  -webkit-transform: rotateY(280deg) translateZ(333px);
-  -moz-transform: rotateY(280deg) translateZ(333px);
-  transform: rotateY(280deg) translateZ(333px); }
+  -webkit-transform: rotateY(280deg) translateZ(525px);
+  -moz-transform: rotateY(280deg) translateZ(525px);
+  transform: rotateY(280deg) translateZ(525px); }
 
 #carousel figure:nth-child(9) {
-  -webkit-transform: rotateY(320deg) translateZ(333px);
-  -moz-transform: rotateY(320deg) translateZ(333px);
-  transform: rotateY(320deg) translateZ(333px); }
+  -webkit-transform: rotateY(320deg) translateZ(525px);
+  -moz-transform: rotateY(320deg) translateZ(525px);
+  transform: rotateY(320deg) translateZ(525px); }
 
 .intro-container {
   position: absolute;
