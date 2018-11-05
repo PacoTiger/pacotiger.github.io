@@ -151,17 +151,16 @@
 		"id": "5",
 		"title": "Pokemon API",
 		"category": "Proof of Concept",
-		"description": "Make requests from a API external server, and display the data in a css grid.",
+		"description": "Make requests to a API in an external server, and display the data in a css grid.",
 		"github": "https://github.com/PacoTiger/pokeAPI",
 		"deploy": "https://pacotiger.github.io/pokeAPI/",
 		"img": ["pokeapi/0.png", "pokeapi/1.png", "pokeapi/2.png"],
 		"technologies": [ 
 							{
 								"name" : "JavaScript",
-								"icon": "icons/js.svg"							 	
+								"icon" : "icons/js.svg"							 	
 							},
-							{
-								"name" : "CSS3",
+							{	"name" : "CSS3",
 								"icon" : "icons/css3.svg"
 							},
 							{
@@ -193,7 +192,7 @@
 		"technologies": [ 
 							{
 								"name" : "JavaScript",
-								"icon": "icons/js.svg"							 	
+								"icon" : "icons/js.svg"							 	
 							},
 							{
 								"name" : "CSS3",
@@ -220,15 +219,15 @@
 	{
 		"id": "7",
 		"title": "BlaBlaBus",
-		"category": "Project",
-		"description": "Crazy unfinished project, where you could find plenty of private bus routes and reserve a seat.",
-		"github": "",
-		"deploy": "",
-		"img": ["comparison/Intro.jpg", "comparison/MeterDetails.jpg", "comparison/Step1.jpg"],
+		"category": "Final Project EOI",
+		"description": "Crazy unfinished project, where you could find plenty of private bus routes and reserve a seat. This was my final project in my web developer course at EOI",
+		"github": "https://github.com/PacoTiger/blablabus",
+		"deploy": "https://pacotiger.github.io/blablabus/",
+		"img": ["blablabus/0.png", "blablabus/1.png", "blablabus/2.png"],
 		"technologies": [ 
 							{
 								"name" : "JavaScript",
-								"icon": "icons/js.svg"							 	
+								"icon" : "icons/js.svg"							 	
 							},
 							{
 								"name" : "CSS3",
@@ -245,22 +244,22 @@
 							{
 								"name" : "AngularJS",
 								"icon" : "icons/angular.svg"
+							},
+							{
+								"name" : "Materialize",
+								"icon" : "icons/materialize.svg"
 							}
 						]
 	},
 	{
 		"id": "8",
-		"title": "Responsive Emails",
+		"title": "Email Design",
 		"category": "Project",
-		"description": "Crazy unfinished project, where you could find plenty of private bus routes and reserve a seat.",
+		"description": "Responsive email designs for Active Energy Direct LTD UK.",
 		"github": "",
 		"deploy": "",
-		"img": ["comparison/Intro.jpg", "comparison/MeterDetails.jpg", "comparison/Step1.jpg"],
+		"img": ["aedEmails/blueEmail.png", "aedEmails/projectlower.png", "aedEmails/responsive2.png"],
 		"technologies": [ 
-							{
-								"name" : "JavaScript",
-								"icon": "icons/js.svg"							 	
-							},
 							{
 								"name" : "CSS3",
 								"icon" : "icons/css3.svg"
@@ -268,14 +267,6 @@
 							{
 								"name" : "HTML5",
 								"icon" : "icons/html5.svg"
-							},
-							{
-								"name" : "jQuery",
-								"icon" : "icons/jquery.svg"
-							},
-							{
-								"name" : "AngularJS",
-								"icon" : "icons/angular.svg"
 							}
 						]
 	}	
