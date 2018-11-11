@@ -1,6 +1,6 @@
 @import "variables","reset","carousel","modal","buttons","default","carousel";
 
-.intro-container {
+.intro-center {
   position: absolute;
   margin: 0 auto;
   right: 0;
@@ -11,9 +11,18 @@
   text-align: center;
 }
 
+.intro-left {
+  position: absolute;
+  padding-left: 10px;
+  padding-top: 10px;
+  color: $fontColor;
+}
+
+.role {
+  text-align: right;
+}
 
 .sky-container {
-  border: black solid;
   position: absolute;
   margin: 0 auto;
   right: 0;

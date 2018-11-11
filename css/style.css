@@ -113,15 +113,15 @@ a, a:visited, a:link {
 .card footer div {
   position: absolute;
   text-align: right;
-  width: 90%;
-  height: 90%;
-  padding-right: 5%; }
+  width: 98%;
+  height: 90%; }
 
 .card footer img {
   height: 90%;
   filter: grayscale(99%);
   transition: 0.3s;
-  display: inline-block; }
+  display: inline-block;
+  padding: 0px 1px; }
 
 .card footer img:hover {
   filter: grayscale(20%);
@@ -228,6 +228,7 @@ a, a:visited, a:link {
   text-shadow: -2px -2px 0px #cc0000, 2px -2px 0px #cc0000, -2px 2px 0px #cc0000, 2px 2px 0px #cc0000; }
 
 .descriptionM {
+  border-radius: 5px;
   font: 16px monospace, sans-serif;
   clear: left;
   text-indent: 20px;
@@ -239,6 +240,7 @@ a, a:visited, a:link {
   padding: 5px; }
 
 .labelM {
+  border-radius: 5px;
   font: 17px monospace, sans-serif;
   text-indent: 20px;
   line-height: 1.25;
@@ -579,15 +581,15 @@ h1 {
 .card footer div {
   position: absolute;
   text-align: right;
-  width: 90%;
-  height: 90%;
-  padding-right: 5%; }
+  width: 98%;
+  height: 90%; }
 
 .card footer img {
   height: 90%;
   filter: grayscale(99%);
   transition: 0.3s;
-  display: inline-block; }
+  display: inline-block;
+  padding: 0px 1px; }
 
 .card footer img:hover {
   filter: grayscale(20%);
@@ -638,7 +640,7 @@ h1 {
   -moz-transform: rotateY(320deg) translateZ(525px);
   transform: rotateY(320deg) translateZ(525px); }
 
-.intro-container {
+.intro-center {
   position: absolute;
   margin: 0 auto;
   right: 0;
@@ -648,8 +650,16 @@ h1 {
   color: white;
   text-align: center; }
 
+.intro-left {
+  position: absolute;
+  padding-left: 10px;
+  padding-top: 10px;
+  color: white; }
+
+.role {
+  text-align: right; }
+
 .sky-container {
-  border: black solid;
   position: absolute;
   margin: 0 auto;
   right: 0;

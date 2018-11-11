@@ -215,3 +215,12 @@ var jCarouselJS = function () {
         target: '+=1'
     });
 };
+
+var typed = new Typed('#typed', {
+        strings: ["Web Developer jr.", "Self-taught.", ""],
+        typeSpeed: 120,
+        backSpeed: 100,
+        backDelay: 800,
+        startDelay: 800,
+        loop: true
+    });

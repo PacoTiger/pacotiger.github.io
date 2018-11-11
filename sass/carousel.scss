@@ -94,15 +94,15 @@
 .card footer div {
   position: absolute;
   text-align: right;
-  width: 90%;
+  width: 98%;
   height: 90%;
-  padding-right:5%;
 }
 .card footer img {
   height: 90%;
   filter: grayscale(99%);
   transition: 0.3s;
   display: inline-block;
+  padding: 0px 1px;
 }
 .card footer img:hover {
   filter: grayscale(20%);

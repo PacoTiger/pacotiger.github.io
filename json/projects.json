@@ -183,12 +183,12 @@
 	},
 	{
 		"id": "6",
-		"title": "AED Report",
+		"title": "Tracker Report",
 		"category": "Project",
 		"description": "Daily report about the stats of staff in AED (Active Energy Direct LTD UK). App for private purposes.",
 		"github": "",
 		"deploy": "",
-		"img": ["comparison/Intro.jpg", "comparison/MeterDetails.jpg", "comparison/Step1.jpg"],
+		"img": ["tracker/ranking.png", "tracker/chart.png", "tracker/tabla.png"],
 		"technologies": [ 
 							{
 								"name" : "JavaScript",
@@ -222,8 +222,8 @@
 		"category": "Final Project EOI",
 		"description": "Crazy unfinished project, where you could find plenty of private bus routes and reserve a seat. This was my final project in my web developer course at EOI",
 		"github": "https://github.com/PacoTiger/blablabus",
-		"deploy": "https://pacotiger.github.io/blablabus/",
-		"img": ["blablabus/0.png", "blablabus/1.png", "blablabus/2.png"],
+		"deploy": "",
+		"img": ["blablabus/0.png", "blablabus/1.png", "blablabus/2.png", "blablabus/3.png"],
 		"technologies": [ 
 							{
 								"name" : "JavaScript",
