@@ -217,7 +217,7 @@ var jCarouselJS = function () {
 };
 
 var typed = new Typed('#typed', {
-        strings: ["Web Developer jr.", "Self-taught.", ""],
+        strings: ["Web Developer Jr.", "Self-taught.", "Front-End Certificated"],
         typeSpeed: 120,
         backSpeed: 100,
         backDelay: 800,

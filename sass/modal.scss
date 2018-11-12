@@ -35,6 +35,9 @@
     -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
+    footer {
+        text-align: center;
+    }
 }
 
 @media screen and (max-device-width : 600px) {
@@ -63,12 +66,11 @@
 }
 
 .strokeM {
-    text-align: center;
-    color: pink;
+    color: white;
     font-family: georgia;
-    font-size: 38px;
-    letter-spacing: 1px;
-    text-shadow: -2px -2px 0px #cc0000, 2px -2px 0px #cc0000, -2px 2px 0px #cc0000, 2px 2px 0px #cc0000;
+    text-transform: capitalize;
+    font-size: 5rem;
+    text-align: center;
 }
 
 .descriptionM {

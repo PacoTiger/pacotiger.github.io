@@ -208,6 +208,7 @@ window.addEventListener("mousemove", function (event) {
 	normalizedMouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
 });
 
+var introLeft = $('.intro-left');
 var introContainer = $('.intro-container');
 var skyContainer = $('.sky-container');
 var xMark = $('.x-mark');
@@ -216,6 +217,7 @@ $('.shift-camera-button').click(function () {
 	var introTimeline = new TimelineMax();
 	skyContainer.removeClass("hidde");
 	introTimeline.add([
+		TweenLite.fromTo(introLeft, 0.5, { opacity: 1 }, { opacity: 0, ease: Power3.easeIn }), 
 		TweenLite.fromTo(introContainer, 0.5, { opacity: 1 }, { opacity: 0, ease: Power3.easeIn }), 
 		TweenLite.to(camera.rotation, 3, { x: Math.PI / 2, ease: Power3.easeInOut }),
 		TweenLite.to(camera.position, 2.5, { z: 20, ease: Power3.easeInOut }),
@@ -242,7 +244,8 @@ $('.x-mark').click(function () {
 		]);
 
 	outroTimeline.add([
-		TweenLite.to(introContainer, 0.5, { opacity: 1, ease: Power3.easeIn })
+		TweenLite.to(introContainer, 0.5, { opacity: 1, ease: Power3.easeIn }),
+		TweenLite.to(introLeft, 0.5, { opacity: 1, ease: Power3.easeIn })
 		]);
 });
 

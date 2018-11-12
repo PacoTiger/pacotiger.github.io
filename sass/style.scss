@@ -1,6 +1,6 @@
 @import "variables","reset","carousel","modal","buttons","default","carousel";
 
-.intro-center {
+.intro-container {
   position: absolute;
   margin: 0 auto;
   right: 0;
@@ -16,10 +16,22 @@
   padding-left: 10px;
   padding-top: 10px;
   color: $fontColor;
-}
-
-.role {
-  text-align: right;
+  .name {
+    font-size: 54px;
+    line-height: 1.07143;
+    font-weight: 600;
+    letter-spacing: -.005em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  }
+  .typedDaddy {
+    text-align: right;
+    font-size: 24px;
+    line-height: 1.14815;
+    font-weight: 400;
+    letter-spacing: .008em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin-top: 6px;
+  }
 }
 
 .sky-container {
