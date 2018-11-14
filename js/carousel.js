@@ -120,7 +120,7 @@ request.onload = function() {
         "<div class='rowM'>" + 
           "<p class='labelM'>" + projectsInfo[i].category + "</p>" +
           "<a href='" + projectsInfo[i].github + "' target='_blank'>" + 
-            "<span class='gitIcon'><i class='fab fa-github-square fa-2x'></i></span>" +
+            "<span class='gitIcon'><i class='fab fa-github-square fa-3x'></i></span>" +
           "</a>" +
         "</div>" +
       "</section>" +
